@@ -1,0 +1,266 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7fc;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container to hold both sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Job card section - 30% width on the left */
+.job-card-section {
+    width: 25%; /* Increased width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual job card styling */
+.containerjob {
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 15px; /* Space between cards */
+}
+
+.timee {
+    font-size: 12px;
+    color: #6c757d; /* Text color */
+    margin-bottom: 10px;
+}
+
+.job-info {
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.company-name {
+    color: #6c757d; /* Lighter color for company name */
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Job description section - 65% width on the right */
+.job-description-section {
+    width: 75%; /* Adjusted width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texttitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.job-description-section p {
+    color: #495057;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* List items for job requirements */
+.job-description-section ul {
+    color: #495057;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+.job-description-section ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Icon styling */
+.p {
+    display: flex;
+    justify-content: space-around; /* Space evenly */
+    margin-top: 20px;
+}
+
+.p-2 {
+    text-align: center; /* Center icons and text */
+}
+
+.p-2 img {
+    width: 30px; /* Smaller icon size */
+    height: 30px; /* Smaller icon size */
+}
+
+/* Button styling */
+.btn {
+    margin-top: 10px;
+    padding: 5px 10px; /* Adjust padding for buttons */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .job-card-section,
+    .job-description-section {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+
+    .job-card-section {
+        margin-right: 0; /* Reset right margin */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header Section with Background Image */
+.header {
+    background-image: url('/Images/Free\ Vector\ _\ Paper\ style\ wavy\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40%;
+    color: rgb(5, 5, 5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.hero-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.welcome {
+    padding-left: 5%;
+
+}
+
+.salam3likom {
+    padding: 10%;
+}
