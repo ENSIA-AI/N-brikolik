@@ -1,0 +1,153 @@
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-image: url(../Images/background.jpg) ;
+    padding: 10px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px black;
+
+    height: 35%; 
+    color: black;
+    margin-bottom: 0%;
+    border-bottom: 2px black;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    padding-top: 3%;
+    padding-left: 20%;
+}
+
+nav ul li a {
+
+    color: gray;
+    text-decoration: none; 
+    opacity: 0.8;
+}
+
+nav a:hover {
+    color: #9bd7d1;
+}
+
+nav ul li {
+
+    display: inline;
+    padding-right: 40px;
+}
+
+.sign {
+
+    margin-top: 3%;
+    border: 1px solid black;
+    background-color: #325D79;
+    height: 50px;
+    width: 100px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sign:hover {
+    background-color: #9bd7d1;
+}
+
+.login {
+    margin-top: 3%;
+    margin-left: 8%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0.5%;
+    font-weight: 700px;
+    color: white;
+}
+.thumbnail-card{
+    cursor: pointer;
+}
+
+.green-bg{
+    background-color: #bde0dc;
+}
+.row-60{
+    height: 40%;
+}
+.row-40{
+    height: 30%;
+}
+.icon{
+    width: 50%;
+}
+.badge{
+    font-size: 1.1rem;
+}
+
+
+
+
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

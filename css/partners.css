@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header Section with Background Image */
+.header {
+    background-image: url('/Images/Free\ Vector\ _\ Paper\ style\ wavy\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40%;
+    color: rgb(5, 5, 5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 50px;
+    padding-top: 1%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    padding-top: 0%;
+}
+
+.companies, .schools {
+    margin: 20px 0;
+    padding-top: 0%;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+/* Join Us Section */
+.join-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url('/Images/pexels-fauxels-3184416-removebg-preview.png'); /* Add background image */
+    background-size: cover;
+    color: rgb(5, 5, 5);
+}
+
+.join-content {
+    width: 50%;
+    padding-left: 20%;
+}
+
+.join-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.join-content p {
+    font-size: 1.2rem;
+}
+
+.join-content ul {
+    margin: 20px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.join-button {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.join-image {
+    width: 40%;
+}
+
+.join-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
