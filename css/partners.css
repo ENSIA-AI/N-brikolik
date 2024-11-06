@@ -79,8 +79,13 @@ body {
 }
 
 .companies, .schools {
-    margin: 20px 0;
+    margin-bottom: 20px;
     padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+    background-color: #9BD7D1;
+    
 }
 
 .logos {

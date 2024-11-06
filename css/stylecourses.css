@@ -6,67 +6,94 @@
 }
 
 body {
+    position: relative;
     line-height: 1.6;
     background-color: #ffffff;
     overflow-x: hidden;
+    min-width: 100%;
 }
-
 .toggle-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #333;
+    width: 300px;
+    top: 50px;
+    left: 140px;
+    background-color:gray;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 5px;
     margin-bottom: 30px;
-    z-index: 1; /* Ensure button is above sidebar */
+    z-index: 2; /* Ensure button is above sidebar */
+    display: none; /* Hide the button by default */
 }
 
+/* Show toggle button when screen width is 800px or smaller */
+@media (max-width: 800px) {
+    .toggle-btn {
+        display: block; /* Show toggle button on small screens */
+    }
+}
+/* Sidebar styles */
 .sidebar {
-    
-    
     width: 220px;
     background-color: white;
     color: black;
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 90.5%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transform: translateX(0); /* Show sidebar by default */
     transition: transform 0.3s ease;
 }
 
-.sidebar.hide {
-    transform: translateX(-100%); /* Hide sidebar */
-}
-
-
-
-.sidebar ul {
-    margin-top: 35%;
-    list-style-type: none;
+/* Position the logo at the top */
+#menu-list {
+    margin-top: 0; /* Remove any default margin */
     padding: 0;
+    list-style: none;
 }
 
-.sidebar ul li {
-    margin: 15px 5px;
+/* Logo styling */
+#menu-list .logo {
+    margin-left: 0; /* Center the logo */
+    margin-bottom: 10px; /* Add some space below the logo */
 }
 
-.sidebar ul li a {
+/* Sidebar menu items */
+#menu-list li {
+    margin: 10px 0;
+}
+
+/* Sidebar links */
+#menu-list li a {
     color: black;
-    text-decoration: none;
+    opacity: 70%;
+    text-decoration: underline;
     display: block;
     padding: 10px;
     border-radius: 5px;
 }
-.content{
-    margin-left: 200px;
-}
-.sidebar ul li a:hover {
+
+#menu-list li a:hover {
     background-color: #575757;
+}
+
+
+/* Hide sidebar when the 'hide' class is added */
+.sidebar.hide {
+    transform: translateX(-100%); /* Move sidebar out of view */
+}
+
+
+/* Content layout */
+.content {
+    margin-left: 220px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Adjust content layout when sidebar is hidden */
+.sidebar.hide + .content {
+    margin-left: 0;
 }
 
 /* Dropdown menu */
@@ -180,7 +207,7 @@ p-2 h3{
     margin-top: 100px;
 }
 .cour{
-    width: 950px;
+    width: 900px;
     margin-left: 85px;
     margin-top: 100px;
     height: 300px;
@@ -261,28 +288,38 @@ p-2 h3{
 }
 
 footer {
-    background-color: #325D79;
-    color: white;
-    padding: 20px 50px;
+    width: 100%;
+    background-color: #325D79; /* Background color */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Increased padding for a spacious feel */
+    text-align: center; /* Center align footer text */
 }
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Distribute space evenly around items */
     padding-bottom: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .footer-links div {
-    width: 30%;
+    margin: 0 20px; /* Add space between columns */
+    text-align: left; /* Left-align text within each section */
+    flex: 1; /* Make sections flexible */
 }
 
 .footer-links h4 {
     margin-bottom: 10px;
+    font-size: 1.5em; /* Larger font size for headings */
+    font-weight: bold; /* Make headings bold */
+     /* Add an underline */
+    padding-bottom: 5px; /* Padding under headings */
 }
 
 .footer-links ul {
     list-style: none;
+    padding: 0; /* Remove default padding */
 }
 
 .footer-links ul li {
@@ -290,28 +327,94 @@ footer {
 }
 
 .footer-links ul li a {
-    color: white;
-    text-decoration: none;
+    color: #f0f0f0; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition on hover */
 }
 
-.footer p {
-    text-align: center;
-    margin-top: 10px;
+.footer-links ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+footer p {
+    margin-top: 20px; /* More space above copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
 }
 
 input[type="email"] {
     padding: 10px;
     border: none;
     margin-right: 10px;
+    width: 70%; /* Set a reduced width for the email input */
+    margin-bottom: 50px;
 }
 
 button {
+    margin-top: 30px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #F26627;
     color: white;
     border: none;
     border-radius: 5px;
+    width: 40%; /* Set a reduced width for the subscribe button */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .footer-links {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .footer-links div {
+        margin-bottom: 20px; /* Space between stacked sections */
+        width: 100%; /* Full width for each section */
+    }
+
+    .footer-links h4 {
+        text-align: left; /* Ensure headings are left-aligned */
+    }
+
+    .footer-links ul li {
+        text-align: left; /* Ensure links are left-aligned */
+    }
+
+    input[type="email"] {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+   
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer-links {
+        padding-bottom: 15px;
+    }
+
+    .footer-links h4 {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 5px;
+    }
+
+    input[type="email"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
+
 
 .welcome {
     padding-left: 2%;
@@ -354,60 +457,67 @@ button {
 }
 
 
-@media (max-width: 1100px) {
+
+@media (max-width: 1240px) {
     .features {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px; /* Adjusts space between columns */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
-    .feature{
+    .entrolled h2{
+        margin-left: 200px;
+    }
+    .feature {
         margin-left: 30px;
-        
         width: 300px;
         height: 150px;
     }
-    .content{
+
+    .content {
         margin-left: 200px;
     }
+
     .hero-images img {
-        width: 90%; /* Reduce width */
+        width: 90%;
         margin: auto;
     }
 
     .cour {
-        width: 80%;
-        margin-left: 20px;
+        width: 90%;
+        margin-left: 70px;
     }
 
     .salam3likom {
         width: 90%;
         flex-direction: column;
-        padding: 5%  0 0;
+        padding: 5% 0 0;
         padding-left: 10%;
     }
 
     .start-learning {
         padding: 20px;
     }
-    .start-learning p{
+
+    .start-learning p {
         margin-left: 5%;
-        
     }
 
     .view-more-link {
-        position: static;
-        margin: 20px auto;
+        margin-left: 79%;
+        font-size: 13px;
     }
 }
 
+/* Medium screens (up to 850px) */
 @media (max-width: 850px) {
     .content {
-        margin-left: 200px;
+        margin-left: 260px;
+        width:75%;
     }
 
     .salam3likom {
         width: 100%;
-        padding: 2%  0 0;
+        padding: 2% 0 0;
         flex-direction: column;
         padding-left: 15%;
     }
@@ -420,20 +530,34 @@ button {
         width: 100%;
         height: auto;
     }
-    .features{
+
+    .features {
         width: 100%;
     }
-
+    .entrolled h2{
+        margin-left: 50px;
+    }
     .cour {
         width: 100%;
-        margin-left: 0;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0;
     }
 
     .hero-images img {
         width: 100%;
     }
+    .view-more-link {
+       display: none;
+    }
 }
 
+/* Small screens (up to 576px) */
 @media (max-width: 576px) {
     .container {
         padding: 10px;
@@ -454,5 +578,61 @@ button {
 
     .checkyourlevel {
         font-size: 2rem;
+    }
+
+    .check-level-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20%;
+    }
+
+    .check-level-content .text-content {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .check-level-content .image-content {
+        width: 100%;
+    }
+
+    .logins img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .view-more-link {
+        margin: 10px auto;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra small screens (up to 400px) */
+@media (max-width: 400px) {
+    .view-more-link {
+        font-size: 14px;
+    }
+
+    .start-learning {
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .checkyourlevel {
+        font-size: 1.5rem;
+    }
+
+    .check-level-content .text-content {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
