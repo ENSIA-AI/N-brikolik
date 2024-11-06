@@ -1,19 +1,40 @@
 /* ------------------------------------------------------------------------------------------ */
-.employer {
-    background-image: url(../Images/employerbackground.png), url(../Images/white-background.png);
-    background-repeat: no-repeat, no-repeat;    
-    background-position: center, center;
-    background-size: contain, cover;
+.display-1 {
+    font-weight:500;
 }
 
+#welcome {
+    color: gray;
+    font-weight: 700;
+}
+
+#label-button {
+    background-color: rgba(235, 152, 0, 0.221);
+    color: rgb(235, 152, 0);
+    border-radius: 10rem;
+}
+#profile-button {
+    background-color: rgb(235, 152, 0);
+    color: white;
+}
+
+.employer {
+    background-image: url("../pictures/white-background.png"), url("../pictures/employerbackground.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover, contain;
+}
+
+
 #notification-button {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
 }
 
 #notification-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .employer-card {

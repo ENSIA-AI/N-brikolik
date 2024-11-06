@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nbreecolik</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <title>N'brecolik</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav>
             <img class="logo" src="../pictures/84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="Company Logo" height="100rem">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="partners.html">Partners</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
+            
+              <button class="hamburger" onclick="toggleMenu()">☰</button>
+              <nav id="navMenu" class="nav-menu">
+                  <a href="./home.html">Home</a>
+                  <a href="./html/work.html">work</a>
+                  <a href="./html/courses.htm">courses</a>
+                  <a href="./html/partners.htm">partners</a>
+                  <a href="./html/aboutus.html">about us</a>
+              </nav>
+            
             <div class="auth-buttons">
-                <button class="login" aria-label="Login">Login</button>
-                <button class="sign" aria-label="Sign Up">Sign Up</button>
+                <button class="login" onclick="window.open('./html/form.html', '_blank')" aria-label="Login">Login</button>
+                <button class="sign" onclick="window.open('./html/form.html', '_blank')" aria-label="Sign Up">Sign Up</button>
             </div>
         </nav>
         <h1 class="title">n'brecolik?!</h1>
@@ -54,14 +56,14 @@
     </header>
     <main>
         <div class="latest-jobs">
-            <h2>Latest Jobs</h2>
-            <div class="carousel">
-                <button class="nav left">&lt;</button>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <h2><b>Latest Jobs</b></h2>
+            
+              
+                
+                    <div class="cont">
                         <div class="job-card">
                           <div class="state">
-                            <button>13 minutes ago</button>
+                            <button>13 min ago</button>
                             <p >available</p>
                         </div>
                         <div class="company">        
@@ -89,7 +91,7 @@
                         </div>
                         <div class="job-card">
                           <div class="state">
-                            <button>13 minutes ago</button>
+                            <button>13 min ago</button>
                             <p >available</p>
                         </div>
                         <div class="company">        
@@ -117,7 +119,7 @@
                         </div>
                         <div class="job-card">
                           <div class="state">
-                            <button>13 minutes ago</button>
+                            <button>13 min ago</button>
                             <p >available</p>
                         </div>
                         <div class="company">        
@@ -145,9 +147,9 @@
                         </div>
                     </div>
                     <!-- Additional job cards can follow the same structure -->
-                </div>
-                <button class="nav right">&gt;</button>
-            </div>
+                
+               
+            
         </div>
     </main>
     <section class="courses-section">
@@ -214,7 +216,7 @@
         <!-- Container for image and button -->
         <div class="image-button-container">
           <div class="single-image">
-            <img src="..\pictures\partners-removebg-preview.png" alt="group of partners">
+            <img src="https://img.freepik.com/free-vector/business-people-entrepreneur_24877-63439.jpg?uid=R171692784&ga=GA1.1.1282339003.1728219826" alt="group of partners">
           </div>
           <div class="cta-container">
             <button class="cta-button">Decouvrir Nos Tarifs</button>
@@ -242,7 +244,7 @@
               <!-- Full Comment -->
               <p class="card-text">
                 I had an excellent experience with the Flight Training Lessons.
-                efficient, and very professional employment process.
+                efficient!!
               </p>
               <!-- quotes -->
               <div class="d-flex justify-content-end">
@@ -351,7 +353,7 @@
                   How AI is Changing the Future of Technology
                 </h5>
                 <!-- Read More Button -->
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="#" class="btn btn-primary" style="background-color: #325D79;">Read More</a>
               </div>
             </div>
           </div>
@@ -371,7 +373,7 @@
                 <!-- Title -->
                 <h5 class="card-title">Latest Updates in Cybersecurity</h5>
                 <!-- Read More Button -->
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="#" class="btn btn-primary" style="background-color: #325D79;">Read More</a>
               </div>
             </div>
           </div>
@@ -383,45 +385,33 @@
         </div>
       </section>
       <footer>
-        <div class="items">
-            <ul class="item">
-                <li ><a href="work.html"><img src="..\pictures\job.png" alt="job" height="30px " width="30px"><h1 class="job">Job</h1></a></li>
-                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque distinctio, similique tempore error</p> </li>
-                
-            </ul>
-            <ul class="item">
-                <li><h1>Company</h1></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="partners.html">Our Partners</a></li>
-                <li><a href="work.html">For employers</a></li>
-                <li><a href="work.html">For Companies</a> </li>
-            </ul>
-            <ul class="item">
-                <li><a href="work.html"><h1>Job Categories</h1></a></li>
-                <li> Marketing</li>
-                <li>Finance</li>
-                <li>Development</li>
-                <li>Design</li>
-            </ul>
-            <ul class="item">
-                <li><h1>News Letter</h1></li>
-                <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                <li><input type="text"  class="letter" placeholder="Email"></li>
-                <li><button class="subscribe"><b>Subscribe Now</b></button></li>
-            
-            </ul>
-
-        </div>
-
         <div class="footer-links">
-            <a href=""><h5 class="privacy">Privacy Policy</h5></a>
-            <a href=""><h5 class="conditions">Terms & Conditions</h5></a>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="aboutus.htm">About Us</a></li>
+                    <li><a href="work.htm">Work</a></li>
+                    <li><a href="aboutus.htm">FAQ</a></li>  <!--make it scroll untill faq-->
+                </ul>
+            </div>
+            <div>
+                <h4>Job Categories</h4>
+                <ul>
+                    <li><a href="work.htm">Technology</a></li>
+                    <li><a href="work.htm">Design</a></li>
+                    <li><a href="work.htm">Finance</a></li> <!--resultat de filtrage-->
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for the latest updates.</p>
+                <input type="email" placeholder="Your email">
+                <br>
+                <button>Subscribe Now</button>
+            </div>
         </div>
-
-        
-
+        <p>&copy; 2024 N'brecolik. All Rights Reserved.</p>
     </footer>
-      
       
       <!-- Bootstrap CSS and JS files -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -431,7 +421,8 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
     
-    <script src="slider.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>
 

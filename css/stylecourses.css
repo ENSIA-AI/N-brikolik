@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    z-index: 1; /* Ensure button is above sidebar */
+}
+
+.sidebar {
+    
+    
+    width: 220px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(0); /* Show sidebar by default */
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hide {
+    transform: translateX(-100%); /* Hide sidebar */
+}
+
+
+
+.sidebar ul {
+    margin-top: 35%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 5px;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.content{
+    margin-left: 200px;
+}
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    padding-left: 20px;
+}
+
+.dropdown-menu li {
+    margin: 10px 0;}
+
+.hero-images {
+    display: flex;
+    padding-left: 0%;
+
+}
+
+
+.hero-images img {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 0%;
+}
+p-2 h3{
+    margin-left: 20px; 
+    display: block; /* Or inline-block */
+    width: 20%;
+}
+.start-learning {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    background-color: white;
+}
+.container {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+.box {
+    position: relative;
+    margin-right:30px ;
+    height:250px;
+    width: 23%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+.box img {
+    display: block; /* Removes default space below images */
+    width: 100%;
+    height: 40%;
+}
+
+.title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    height: 60%;
+}
+.view-more-link {
+    text-wrap: nowrap;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 130px;
+    margin-left: 750px;
+    
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    
+    
+}
+.view-more-link span{
+    text-decoration: underline;
+}
+
+
+.box button {
+    
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#F0ECF3 ;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-learning h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.entrolled h2{
+    font-size: 2rem;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.cour{
+    width: 950px;
+    margin-left: 85px;
+    margin-top: 100px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #F0ECF3;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.feature {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Check Level Section with Updated Background */
+.check-level {
+    background-image: url('../pictures/Design sans titre (5).png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Takes up the full height of the viewport */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10%;
+}
+
+
+.check-level-content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkyourlevel{
+    width: 30%;
+    text-wrap: nowrap;
+}
+.check-level-content .text-content {
+    width: 60%;
+    position: absolute;
+    padding-top: 40%;
+    padding-left: 5%;
+}
+
+.check-level-content .image-content {
+    width: 30%;
+}
+
+.check-level-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.check-level .button {
+    background-color:#309689;
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #309689;
+   
+    
+}
+
+.partners {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.logos img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.welcome {
+    padding-left: 2%;
+    text-align: justify;
+
+}
+
+.salam3likom {
+    padding: 5%;
+    padding-bottom: 0%;
+    padding-left: 9%;
+    padding-right: 8%;
+}
+
+.checkyourlevel {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.checkyourlevelbutton {
+    padding-top: 5%;
+}
+
+
+.schools {
+    margin: 20px 0;
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+
+@media (max-width: 1100px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px; /* Adjusts space between columns */
+    }
+    .feature{
+        margin-left: 30px;
+        
+        width: 300px;
+        height: 150px;
+    }
+    .content{
+        margin-left: 200px;
+    }
+    .hero-images img {
+        width: 90%; /* Reduce width */
+        margin: auto;
+    }
+
+    .cour {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .salam3likom {
+        width: 90%;
+        flex-direction: column;
+        padding: 5%  0 0;
+        padding-left: 10%;
+    }
+
+    .start-learning {
+        padding: 20px;
+    }
+    .start-learning p{
+        margin-left: 5%;
+        
+    }
+
+    .view-more-link {
+        position: static;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .content {
+        margin-left: 200px;
+    }
+
+    .salam3likom {
+        width: 100%;
+        padding: 2%  0 0;
+        flex-direction: column;
+        padding-left: 15%;
+    }
+
+    .p-2 h3, .feature h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature {
+        width: 100%;
+        height: auto;
+    }
+    .features{
+        width: 100%;
+    }
+
+    .cour {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hero-images img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .start-learning {
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .features {
+        gap: 10px;
+    }
+
+    .checkyourlevel {
+        font-size: 2rem;
+    }
+}
