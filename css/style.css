@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-image: url("../Images/Free\ Vector\ _\ Paper\ style\ wavy\ background.jpg");
+    padding: 1rem;
+    background-size: cover;
+    color: black;
+    height: 40rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 20rem;
+    list-style-type: none; 
+}
+
+nav ul li {
+    margin-right: 3rem;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #9bd7d1;
+}
+
+.auth-buttons {
+    margin-left: auto;
+}
+
+header .sign, header .login {
+    cursor: pointer;
+
+}
+
+header .sign {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #325D79;
+    color: white;
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.sign:hover {
+    background-color: #9bd7d1;
+}
+
+header .login {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: black;
+    
+
+}
+
+header .title {
+    margin-top: 1.5rem;
+    font-size: 7rem;
+    font-weight: 600;
+    padding-left: 8.5rem;
+}
+
+.subtitle {
+    color: gray;
+    padding: 0 9rem;
+    font-size: 1.2rem;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50rem; /* Set a width for the search container */
+    margin-top: 1.2rem;
+    margin-left: 9rem;
+}
+
+.search input {
+    padding: 0.625rem 2rem; /* Adjust padding using rem */
+    border: 0.0625rem solid #ccc; /* Border thickness using rem */
+    border-radius: 0.3125rem; /* Border radius using rem */
+    width: 100%; /* Full width */
+}
+
+.search-icon {
+    position: absolute;
+    left: 35.5rem; /* Position inside the input using rem */
+    cursor: pointer;
+    width: 1.4rem; /* Icon size using rem */
+    height: 1.4rem; /* Icon size using rem */
+}
+
+.filter-icon {
+    position: absolute;
+    right: 0.625rem; /* Position inside the input using rem */
+    cursor: pointer;
+    width: 1.4rem; /* Icon size using rem */
+    height: 1.4rem; /* Icon size using rem */
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-left:2.3rem ;
+}
+.skills .text{
+    
+    margin-bottom: 5rem;
+    color: black; /* Text color */
+    font-weight: bold;
+}
+.skills a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.skills .item {
+    
+    width: 7rem;
+    margin-right:0.1rem;
+    margin-top: 2rem;
+}
+.skills .text:hover{
+    text-decoration: underline;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F26627;
+    padding: 0.8rem;
+    color: white;
+    margin-top:1.5rem;
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+}
+.partners a{
+    text-decoration: none;
+    color: white;
+}
+.partner-logo {
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.latest-jobs {
+    background-color: #f4f7fc;
+    padding: 20px;}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    display: flex;               /* Use flexbox for the inner carousel */
+    flex-direction: column;      /* Stack job cards vertically */
+    width: 100%;                 /* Ensure it takes full width */
+    overflow-y: auto;   
+    
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px; /* Space between cards */
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 0.5rem ;
+    margin-bottom: 2rem;
+    background-color:white;
+    width: 25rem;
+    height: 40rem;
+    border: 2px solid  #EBF5F4 ;
+    border-radius: 15px;
+}
+
+.company{
+    
+    margin-left: 2rem;
+    
+}
+.company h3{
+    margin-left: 1rem;
+    display: flex;
+flex-wrap: wrap;
+  overflow-wrap: break-word;   /* Wraps text only at container edge */
+width: 100%;
+}
+.job-card h4{
+margin-top: 0.1rem;
+margin-left: 3rem;
+margin-right: 3rem;
+opacity: 70%;
+
+
+}
+
+.company img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 0.01rem;
+    
+
+}
+.l{
+    display: flex;
+    gap: 1.5rem; 
+}
+
+.info{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: repeat(5, auto); /* Creates 5 columns */
+    gap: 2rem; 
+    align-items: center;
+    margin-left: 1.9rem;
+    
+}
+.state{
+    display: flex;
+    margin-bottom: 1.5rem;
+
+}
+.state p{
+    margin-top: 0.1rem;
+    color: #F26627;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+.info img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.details{
+    background-color:#325D79 ;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-bottom: 3rem;
+    height:2.5rem;
+    width: 7rem;
+    margin-left: 1.7rem;
+} 
+.state button{
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 1.7rem;
+    width: 7rem;
+    border-radius: 8px;
+    border: 1px white;
+    background-color: #30968910;
+    color: #309689;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .skills, .partners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-inner {
+        flex-direction: column; /* Stack job cards vertically */
+    }
+}
+.courses-section {
+    text-align: center;
+    width: 100%;
+    height: 48rem;
+    background-color: #9BD7D1;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.courses-section h1 {
+    padding-top: 4rem;
+    font-weight: bold;
+
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+.course-grid {
+    margin: 4rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;}
+.course-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 4.3rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+.course-card p {
+    font-size: 0.9rem;
+    color: #77b6b0;
+    background-color: #e0f7f5;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.view-more {
+    margin-top: 20px;
+    display: inline-block;
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.view-more:hover {
+    color: #77b6b0;}
+    #partners-section {
+        text-align: center;
+        padding: 20px;
+        min-height: 100vh; /* Make it take full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+}
+
+#partners-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-left: 9rem;
+        text-align: left;
+        margin-bottom: 7rem;
+        color:black;
+}
+
+      /* Flexbox layout for statistics */
+#partners-section .statistics {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 1.25rem;
+}
+
+#partners-section .stat {
+        flex: 1;
+        max-width: 15rem;
+        margin-bottom: 1.25rem;
+      }
+      
+      #partners-section .stat h2 {
+        font-size: 1.5rem;
+        color: #309689;
+        margin-bottom: 0.6px;
+        
+      }
+
+      
+      #partners-section .stat .title {
+        font-size: 1.1rem;
+        color: #333;
+        font-weight: bold;
+      }
+      
+      #partners-section .stat p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+      
+      /* Flexbox for image and button container */
+      #partners-section .image-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap; /* Ensure responsiveness */
+        max-width: 100%; /* Ensure no horizontal overflow */
+      }
+      
+      #partners-section .single-image {
+        max-width: 50%;
+        flex: 1 1 50%;
+      }
+      
+      #partners-section .single-image img {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+      #partners-section .cta-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 30%;
+      }
+      
+      #partners-section .cta-button {
+        margin-left: 8rem;
+        margin-top: 4rem;
+        background-color: #325D79;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      #partners-section .cta-button:hover {
+        background-color: #20514c;
+      }
+      
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        #partners-section {
+          padding: 10px;
+        }
+      
+        #partners-section h1 {
+          font-size: 1.5rem;
+        }
+      
+        #partners-section .stat h2 {
+          font-size: 1.3rem;
+        }
+      
+        #partners-section .stat {
+          max-width: 150px;
+        }
+      
+        #partners-section .image-button-container {
+          flex-direction: column;
+        }
+      
+        #partners-section .single-image {
+          max-width: 100%;
+        }
+      
+        #partners-section .cta-container {
+          margin-top: 20px;
+        }
+      }
+
+@media (min-width: 1200px) {
+        #partners-section h1 {
+        font-size: 2.5rem;
+        }
+
+        #partners-section .statistics {
+        margin-bottom: 40px;
+        }
+
+        #partners-section .cta-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        }
+    }
+.reviews{
+        color: black;
+        text-align: right;
+        text-decoration: underline;
+}
+.reviews:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+    .custom-bg {
+        background-color: #9BD7D1; /* Replace with your desired color */
+    }
+
+    footer {
+        position: relative; /* Keep this as relative for better layout control */
+        background-color: #325D79;
+        padding: 2rem 1.5rem 1.5rem; /* Changed to rem */
+        width: 100%;
+        color: white;
+    }
+    
+    footer .items {
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+    
+    html, body {
+        height: auto; /* Allow the height to be determined by content */
+        overflow-x: hidden;
+    }
+    
+    footer .item {
+        list-style: none; /* Remove default list styles */
+        padding: 0; /* Remove padding */
+        margin: 0 1rem; /* Changed to rem */
+        flex: 1 1 12.5rem; /* Minimum width */
+    }
+    
+    footer .item li {
+        margin-bottom: 1.25rem; /* Changed to rem */
+    }
+    
+    footer .items a {
+        text-decoration: none; /* Remove underline from links */
+        color: white; /* Link color */
+    }
+    
+    .job {
+        display: inline-block; 
+        margin-left: 1rem; /* Changed to rem */
+    }
+    
+    footer .items a:hover, .job:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
+    
+    footer .item li p {
+        max-width: 12.5rem; /* Changed to rem */
+        text-align: justify;
+    }
+    
+    .subscribe {
+        width: 13.125rem; /* Changed to rem */
+        background-color: #309689;
+        height: 3.4375rem; /* Changed to rem */
+        color: white;
+        border-radius: 0.625rem; /* Changed to rem */
+        cursor: pointer; 
+        border: 0.0625rem solid black; /* Changed to rem */
+    }
+    
+    .subscribe:hover {
+        background-color: beige;
+    }
+    
+    .letter {
+        width: 11.875rem; /* Changed to rem */
+        background-color: transparent;
+        border-radius: 0.625rem; /* Changed to rem */
+        height: 1.875rem; /* Changed to rem */
+        padding: 0.625rem; /* Changed to rem */
+        border: 0.0625rem solid white; /* Changed to rem */
+    }
+    
+    .footer-links {
+        display: flex;
+        margin-top: 3.125rem; /* Changed to rem */
+        justify-content: center; /* Center links on larger screens */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+    
+    .footer-links a {
+        opacity: 50%;
+        color: white;
+        margin-left: 1rem; /* Changed to rem */
+    }
+    
+    .footer-links a:hover {
+        opacity: 100%;
+    }
+    
+    /* Media Queries */
+
+    @media (max-width: 992px) {
+        /* Tablet view */
+        nav ul {
+            padding-left: 2rem;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: center;
+        }
+    
+        header .title {
+            font-size: 4rem; /* Smaller font for the title */
+            padding-left: 0;
+            text-align: center;
+        }
+    
+        .subtitle {
+            font-size: 1.1rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+    
+        .search {
+            width: 90%;
+            margin: 1rem auto;
+        }
+    
+        .skills {
+            justify-content: center; /* Center skills icons */
+            padding-left: 0;
+            gap: 1rem;
+        }
+    
+        .skills .item {
+            width: 5rem; /* Smaller icon size */
+        }
+    
+        .partners {
+            flex-wrap: wrap; /* Allow wrapping for partner logos */
+            justify-content: center; /* Center partner logos */
+            gap: 1rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        /* Mobile view */
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            gap: 0.5rem;
+        }
+    
+        nav ul li {
+            margin-bottom: 0.5rem; /* Reduce space between menu items */
+        }
+    
+        .auth-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+    
+        header .title {
+            font-size: 3rem; /* Smaller font for the title */
+            text-align: center;
+            padding-left: 0;
+        }
+    
+        .subtitle {
+            font-size: 1rem;
+            padding: 0 1rem;
+            text-align: center;
+        }
+    
+        .search {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 1rem auto;
+        }
+    
+        .search input {
+            width: 100%; /* Full width for input */
+            padding: 0.5rem;
+        }
+    
+        .skills {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            gap: 1rem;
+        }
+    
+        .skills .item {
+            width: 4rem; /* Smaller icon size for mobile */
+        }
+    
+        .partners {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+    
+        .partner-logo {
+            height: 2rem; /* Adjust partner logo size for mobile */
+        }
+    }
+    
+    @media (max-width: 400px) {
+        /* Very small mobile screens */
+        header .title {
+            font-size: 2.5rem;
+            text-align: center;
+            padding-left: 0;
+        }
+    
+        .subtitle {
+            font-size: 0.9rem;
+            padding: 0 0.5rem;
+            text-align: center;
+        }
+    
+        nav ul {
+            gap: 0.5rem;
+        }
+    
+        .search {
+            width: 100%;
+            padding: 0 0.5rem;
+            margin: 1rem auto;
+        }
+    
+        .search input {
+            width: 100%;
+            padding: 0.4rem;
+        }
+    
+        .skills .item {
+            width: 3rem;
+        }
+    
+        .partners {
+            gap: 0.3rem;
+        }
+    
+        .partner-logo {
+            height: 1.8rem;
+        }
+    }

@@ -1,0 +1,527 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    /* display: flex;Use flexbox */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    
+    background-image: url('../pictures/Free Vector _ Paper style wavy background.jpg');
+    padding: 0.6rem 1.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 0.06rem  black;
+    
+    height: 17rem;/* viewport height */
+    color: black;
+    
+    border-bottom: 0.03rem  black;
+
+}
+
+nav{
+    display: flex;
+    
+}
+nav ul{
+    padding-top: 2rem ;
+    padding-left: 28rem;
+}
+nav ul li a{
+    
+    color: gray;
+    text-decoration: none; /* Remove underline */
+    /* opacity: 0.8; */
+
+}
+nav a:hover {
+    color: #9bd7d1;
+}   
+nav ul li {
+    
+    display: inline;
+    padding-right:2.6rem;
+}
+.sign{
+
+    margin-top: 2rem ;
+    border: 1px solid black;
+    background-color:#325D79;
+    height: 3.5rem;
+    width: 7rem;
+    color:white;
+    border-radius: 15px;
+    cursor: pointer; /* nzidou hadik lyed ki nl79ou l lboutton */
+    
+}
+.sign:hover {
+    background-color: #9bd7d1; /* Darker green on hover */
+}
+.login{
+    margin-top: 2rem;
+    margin-left: 6rem;
+    border: 1px solid transparent;
+    background-color:transparent;
+    height: 3.5rem;
+    width: 7rem;
+    color:black;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.title{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 50rem;
+}
+.post {
+    display: block; /* Ensure it is displayed */
+    color: black; /* Make sure text is visible */
+    margin-top: 20rem;
+    margin-left: 35.5rem;
+    display: flex;
+}
+html body{
+    overflow-x: hidden;
+    font-size: 16px;
+}
+.post button{
+margin-left: 4%;
+background-color: #F26627;
+color: white;
+margin-top: 1rem;
+border: 1px solid white;
+
+height: 3.5rem;
+width: 7rem;
+text-align: center;
+border-radius: 15px;
+cursor: pointer;
+
+
+}
+.post button:hover {
+
+ opacity: 50%; /* Darker green on hover */
+}
+.filter{
+    padding: 1.9rem;
+    border-radius: 1.05rem;
+    height: 90rem;
+    width:20rem;
+    border: 1px solid white;
+    background-color: #EBF5F4;
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+}
+.search{
+    padding-left: 1rem;
+    border-radius: 7px;
+    border: 1px black;
+    height: 2.5rem;
+    width: 16rem;
+    
+    margin: auto;
+}
+
+.category input,.type input,.Experience input,.date input{
+    margin-bottom: 1rem;
+}
+
+option {
+    padding: 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    width: 16rem;
+
+}
+.city {
+    padding-left: 1rem;
+    border-radius: 7px;
+    border: 1px black;
+    height: 2.5rem;
+    width: 16rem;
+    margin-right:10rem;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    background-color: white; /* Fond blanc pour le champ d'entrée */
+}
+.city:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.fields{
+    border-radius: 7px;
+    border: 1px black;
+    height: 2.5rem;
+    width: 17rem;
+    color: white;
+    background-color: #325D79;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+.fields:hover{
+    opacity: 50%;
+}
+
+/* .salary input{
+    -webkit-appearance: none;
+    border-radius: 5px; 
+    background-color:#325D79; 
+    width: 85%;
+    cursor: pointer;
+    background:#325D79;
+    outline: none; 
+    transition: background 0.3s ease;
+
+} */
+.salary {
+    width: 17rem;
+
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100%;
+    height: 0.9rem; /* Increase height */
+    background: white; /* Start with white background */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+     /* Smooth transition */
+}
+
+
+.apply{
+    height: 2.5rem;
+    width: 9rem;
+    background-color: #325D79;
+    color: white;
+    margin-right: 6rem;
+    margin-top: 4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.apply:hover{
+    opacity: 50%;
+}
+
+
+.offer{
+    width: 65rem;
+    margin-bottom: 20rem;
+    height: 90rem;
+    border: 1px solid white;
+    border-radius:10px ;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    
+}
+.content{
+    display: flex;
+}
+
+.company{
+    display: flex;
+    margin-left: 1.7rem;
+}
+.company h2{
+    margin-left: 9.5rem;
+    transform: translate(-50%, -50%); 
+}
+.job h4{
+margin-top: 0.1rem;
+margin-left: 3rem;
+margin-right: 3rem;
+opacity: 70%;
+
+}
+
+.company img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+}
+.info{
+    padding: 2rem;
+    display: flex;
+    color: gray;
+    text-wrap: nowrap;
+}
+.state{
+    display: flex;
+    margin-bottom: 1.5rem;
+
+}
+.state h3{
+    margin-top: 0.1rem;
+    color: #F26627;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.info img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+.offer .job{
+    
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 0.5rem ;
+    margin-bottom: 2rem;
+    background-color:white;
+    width: 59rem;
+    height: 20rem;
+    border: 2px solid  #EBF5F4 ;
+    border-radius: 15px;
+}
+.details{
+    background-color:#325D79 ;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-bottom: 3rem;
+    height:2.5rem;
+    width: 7rem;
+    margin-left: 24rem;
+} 
+.state button{
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 1.7rem;
+    width: 7rem;
+    border-radius: 8px;
+    border: 1px white;
+    background-color: #30968910;
+    color: #309689;
+
+}
+.start,.he{
+    display: flex;
+}
+.he input{
+    width:10rem;
+    height:2.5rem;
+    margin-left: 43rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 1rem;
+
+}
+.start button{
+margin-left: 5rem;
+background-color: #F26627;
+color: white;
+margin-top: 5rem;
+border: 1px solid white;
+
+height: 3.5rem;
+width: 7rem;
+text-align: center;
+border-radius: 15px;
+cursor: pointer;
+
+}
+.he h3{
+    margin-left:1rem;
+    color: gray;
+    margin-bottom: 4rem;
+}
+.start h2{
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+
+
+footer {
+    position: relative; /* Keep this as relative for better layout control */
+    background-color: #325D79;
+    padding: 2rem 1.5rem 1.5rem; /* Changed to rem */
+    width: 100%;
+    color: white;
+}
+
+footer .items {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+
+
+footer .item {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0 1rem; /* Changed to rem */
+    flex: 1 1 12.5rem; /* Minimum width */
+}
+
+footer .item li {
+    margin-bottom: 1.25rem; /* Changed to rem */
+}
+
+footer .items a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+}
+
+footer .job {
+    display: inline-block; 
+    margin-left: 1rem; /* Changed to rem */
+}
+
+footer .items a:hover, .job:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+footer .item li p {
+    max-width: 12.5rem; /* Changed to rem */
+    text-align: justify;
+}
+
+.subscribe {
+    width: 13.125rem; /* Changed to rem */
+    background-color: #309689;
+    height: 3.4375rem; /* Changed to rem */
+    color: white;
+    border-radius: 0.625rem; /* Changed to rem */
+    cursor: pointer; 
+    border: 0.0625rem solid black; /* Changed to rem */
+}
+
+.subscribe:hover {
+    background-color: beige;
+}
+
+.letter {
+    width: 11.875rem; /* Changed to rem */
+    background-color: transparent;
+    border-radius: 0.625rem; /* Changed to rem */
+    height: 1.875rem; /* Changed to rem */
+    padding: 0.625rem; /* Changed to rem */
+    border: 0.0625rem solid white; /* Changed to rem */
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 3.125rem; /* Changed to rem */
+    justify-content: center; /* Center links on larger screens */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.footer-links a {
+    opacity: 50%;
+    color: white;
+    margin-left: 1rem; /* Changed to rem */
+}
+
+.footer-links a:hover {
+    opacity: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.4rem 1rem;
+        height: 14rem; /* Reduce height slightly */
+    }
+
+    .title {
+        font-size: 1.4rem; /* Scale down the font size */
+        margin-top: 0.3rem;
+    }
+
+    nav ul {
+        padding-top: 1.5rem;
+        padding-left: 15rem; /* Reduce space between items */
+    }
+
+    nav ul li {
+        padding-right: 1.5rem; /* Reduce spacing between items */
+    }
+
+    .sign, .login {
+        height: 3rem;
+        width: 6rem;
+        font-size: 0.9rem; /* Smaller button size */
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 480px) {
+    header {
+        padding: 0.4rem 0.8rem;
+        height: auto; /* Adjust height to fit content */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.2rem; /* Further reduce title size */
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    /* Hide nav items on small screens and show a hamburger menu */
+    nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Styles for the dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        right: 1rem;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        z-index: 10;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        color: gray;
+        text-decoration: none;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .dropdown-menu a:hover {
+        color: #9bd7d1;
+    }
+
+    .sign, .login {
+        height: 2.5rem;
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Toggle dropdown menu on click */
+.hamburger-menu:active + .dropdown-menu,
+.hamburger-menu:hover + .dropdown-menu {
+    display: block;
+}

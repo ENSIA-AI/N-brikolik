@@ -1,0 +1,81 @@
+
+
+#deploma {
+    color: gray;
+}
+#course {
+    color: black;
+}
+
+
+
+
+
+/* color for the accordion buttons */
+.accordion-button {
+    background-color: #dddddd; 
+    color: black;
+}
+/* Change color when the accordion is open */
+.accordion-button:not(.collapsed) {
+    background-color: #84d0d5; 
+    color: black; 
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- custom CSS -->
+    <link href="../css/blog.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <img class="im" src="../Images/logo.png" alt="image" height="25%" width="10%">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">work</a></li>
+                <li><a href="">courses</a></li>
+                <li><a href="">partners</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+            <button class="login" aria-label="login">login</button>
+            <button class="sign" aria-label="Sign in">Sign Up</button>
+        </nav>
+        <h1 class="title">Blog</h1>
+    </header>
+
+
+    <!-- videos section -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- thumbnail 1 -->
+            <div class="col-lg-3 col-md-3 col-sm-6 p-4">
+                <div class="thumbnail-card card d-flex h-100" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                    <img src="../Images/ted-thumbnail.png" class="card-img-top"
+                        alt="How to lead in a crisis | The Way We Work">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">How to lead in a crisis | The Way We Work</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- thumbnail 2 -->
+            <div class="col-lg-3 col-md-3 col-sm-6 p-4">
+                <div class="thumbnail-card card d-flex h-100" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                    <img src="../Images/promotion-thumbnail.png" class="card-img-top" alt="promotion tips">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">How to Get a Promotion Without Asking: 5 Proven Strategies</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- thumbnail 3 -->
+            <div class="col-lg-3 col-md-3 col-sm-6 p-4">
+                <div class="thumbnail-card d-flex card h-100" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                    <img src="../Images/linkedin-thumbnial.png" class="card-img-top" alt="linkedin tips">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LinkedIn Tips for Job Seekers That Attract Recruiters | An Inside Look
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- thumbnail 4 -->
+            <div class="col-lg-3 col-md-3 col-sm-6 p-4">
+                <div class="thumbnail-card card d-flex h-100" data-bs-toggle="modal" data-bs-target="#videoModal4">
+                    <img src="../Images/billgates-thumbnail.png" class="card-img-top" alt="bill gates tips">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">The Best Career Advice from Bill Gates, Richard Branson & Hillary Clinton
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for video 1 -->
+    <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="videoModalLabel1">How to lead in a crisis | The Way We
+                        Work</h5>
+                    <div class="text-right">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/Cxf_SRCcaGo?si=NFnEoWSINkAHQZsP" frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for video 2 -->
+    <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="videoModalLabel2">How to Get a Promotion Without
+                        Asking: 5 Proven Strategies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span> <!-- &time refer to "x" symbole -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/OcTIAK08AYw?si=etuNv7-9PITYvMeD" frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for video 3 -->
+    <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="videoModalLabel3">LinkedIn Tips for Job Seekers That
+                        Attract Recruiters | An Inside Look</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span> <!-- &time refer to "x" symbole -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/PhJCwVzoDsg?si=F3M8ZL0jO-2kmY-p" frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for video 4 -->
+    <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="videoModalLabel4">The Best Career Advice from Bill
+                        Gates, Richard Branson & Hillary Clinton</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/ranZY3q3Nzo?si=RHAxe6sVyBp3Z6uy" frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- preparation kit section -->
+    <section class="container-fluid green-bg py-5 px-4">
+        <div class="row">
+            <!-- Images on the left -->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 px-5">
+                <div class="row g-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="../Images/Img1.png" class="img-fluid" alt="img">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row g-1 pb-3">
+                            <div class="col">
+                                <img src="../Images/Img2.png" class="img-fluid" alt="img">
+                            </div>
+                        </div>
+                        <div class="row g-1 pb-3">
+                            <div class="col">
+                                <img src="../Images/Img3.png" class="img-fluid" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icons on the right -->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center flex-column">
+                <div class="text-center m-5">
+                    <h4 class="pb-3">Best Preparation Kit</h4>
+                    <p class="text-muted">Your essential toolkit for career success—connect with top companies, build a
+                        standout resume, and discover quality job opportunities.</p>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card px-3 py-2 my-1">
+                            <div class="d-flex align-items-center">
+                                <img src="../Images/icon1.png" class="me-2" width="50" alt="icon">
+                                <div class="card-text">Quality jobs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card px-3 py-2 my-1">
+                            <div class="d-flex align-items-center">
+                                <img src="../Images/icon2.png" class="me-2" width="50" alt="icon">
+                                <div class="card-text">Resume Builder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card px-3 py-2 my-3">
+                            <div class="d-flex align-items-center">
+                                <img src="../Images/icon3.png" class="me-2" width="50" alt="icon">
+                                <div class="card-text">Top companies</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card px-3 py-2 my-3">
+                            <div class="d-flex align-items-center">
+                                <img src="../Images/icon4.png" class="me-2" width="50" alt="icon">
+                                <div class="card-text">Top Talents</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blogs and News Section -->
+    <section id="blogs-news" class="container my-5">
+        <div class="row">
+            <!-- Blog Card 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/05/artificial-intellegence.jpg"
+                            class="card-img-top" alt="Blog" />
+                        <!-- Label -->
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">Article</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- Publication Date -->
+                        <p class="text-muted mb-1">Published on: October 23, 2024</p>
+                        <!-- Title -->
+                        <h5 class="card-title">
+                            How AI is Changing the Future of Technology
+                        </h5>
+                        <!-- Read More Button -->
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog/News Card 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="https://www.rescusaveslives.com/wp-content/uploads/2023/06/AdobeStock_497505717.jpeg"
+                            class="card-img-top" alt="Blog Cover Image 2" />
+                        <!-- Label  -->
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">News</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- Publication Date -->
+                        <p class="text-muted mb-1">Published on: October 22, 2024</p>
+                        <!-- Title -->
+                        <h5 class="card-title">Latest Updates in Cybersecurity</h5>
+                        <!-- Read More Button -->
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- External Button to Blogs Page -->
+        <div class="text-center mt-4">
+            <a href="blog.html" class="btn btn-outline-primary">Go to Blog</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="aboutus.htm">About Us</a></li>
+                    <li><a href="work.htm">Work</a></li>
+                    <li><a href="aboutus.htm">FAQ</a></li> 
+                </ul>
+            </div>
+            <div>
+                <h4>Job Categories</h4>
+                <ul>
+                    <li><a href="work.htm">Technology</a></li>
+                    <li><a href="work.htm">Design</a></li>
+                    <li><a href="work.htm">Finance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Reach us out!</p>
+                <input type="email" placeholder="Your email">
+                <button>send email</button>
+            </div>
+        </div>
+        <p>&copy; 2024 Nbreecolik. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
