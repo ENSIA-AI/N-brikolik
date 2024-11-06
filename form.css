@@ -1,0 +1,147 @@
+/* General page styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling and overflow */
+}
+
+/* Full width and height form */
+form {
+    width: 98%;   /* 98% width of the viewport */
+    height: 98vh;  /* 98% height of the viewport */
+    background-color: #EBF5F4;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    border: 2px solid #ccc; /* Border around the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+}
+#name,#familyName{
+    margin-top: 0.5rem;
+}
+/* Title styling */
+
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    flex: 1;
+}
+
+.input-group input {
+    width: 100%; /* Make input take full width of the container */
+}
+
+/* Input and select field styling */
+input, select {
+    width: 100%;  /* Full width for all inputs and selects */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Select element specific styles to make it match the inputs */
+select {
+    -webkit-appearance: none;  /* Remove default styling in some browsers */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Focus styles */
+input:focus, select:focus {
+    border-color: #309689;
+    outline: none;
+}
+
+
+
+/* Submit Button styling */
+button {
+    padding: 1.2rem;
+    background-color: #309689;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+   opacity: 70%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        padding: 2rem;  /* Less padding on small screens */
+    }
+
+    form h2 {
+        font-size: 1.5rem; /* Smaller font for heading on mobile */
+    }
+
+    input, select, button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust Name fields to be stacked on mobile */
+    .name-fields {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .input-group {
+        flex: unset;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    input, select, button {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+
