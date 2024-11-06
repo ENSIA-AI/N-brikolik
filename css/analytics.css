@@ -1,0 +1,77 @@
+
+
+
+
+.numbers-card {
+    background-color: rgb(234, 234, 234);
+    border-radius: 8%;
+}
+.large-text {
+    font-size: 2.5rem;
+}
+.numbers-card .card-footer {
+    background-color: #b3d8cb91;
+    color: rgb(48, 136, 96);
+    border-radius: 10%;
+}
+
+
+.rj-card {
+    border-radius: 1rem;
+    background-color: rgb(239, 239, 239);
+    border: 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
