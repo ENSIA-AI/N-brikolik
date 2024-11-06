@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sidebar Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/empty_profile_style.css">
+</head>
+<body>
+  <div class="main-wrapper row" >
+    <!-- Sidebar Section -->
+    <div class="d-none d-md-block col-md-3 bg-light p-3" id="sidebar">
+      <div class="logo"><img src="../images/image.png" alt="logo" /></div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Service Offers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Reception</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My Courses</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Main Content Section -->
+    <div class="main-content col-12 col-md-9">
+      <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center p-4   shadow-sm bg-white" id="profile-empty">
+          <img src="../images/file_empty.png" alt="Empty Profile Icon" class="img-fluid mb-3" style="width: 100px;">
+          <h2>Oops, your profile is empty!</h2>
+          <p>Would you like to give us more information about yourself?</p>
+          <button class="btn btn-warning">Fill in Now</button>
+        </div>
+      </div>
+    
+    </div> 
+  </div>
+  <!-- Footer Section -->
+  <footer  class="bg-custom text-white text-center py-3 mt-auto">
+    <div class="footer-links">
+      <div>
+          <h4>Company</h4>
+          <ul>
+              <li><a href="aboutus.htm">About Us</a></li>
+              <li><a href="work.htm">Work</a></li>
+              <li><a href="aboutus.htm">FAQ</a></li>  <!--make it scroll untill faq-->
+          </ul>
+      </div>
+      <div>
+          <h4>Job Categories</h4>
+          <ul>
+              <li><a href="work.htm">Technology</a></li>
+              <li><a href="work.htm">Design</a></li>
+              <li><a href="work.htm">Finance</a></li> <!--resultat de filtrage-->
+          </ul>
+      </div>
+      <div>
+          <h4>Newsletter</h4>
+          <p>Subscribe for the latest updates.</p>
+          <input type="email" placeholder="Your email">
+          <br>
+          <button>Subscribe Now</button>
+      </div>
+  </div>
+  <p>&copy; 2024 N'brecolik. All Rights Reserved.</p>
+</footer>   
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

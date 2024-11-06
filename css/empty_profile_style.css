@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-size: 16px; /* Default base font-size for rem units */
+}
+/* Flex container to hold sidebar + content */
+.main-wrapper {
+    display: flex;
+    min-height: 100vh; 
+}
+#sidebar {
+    background-color: #f4f4f4;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+   
+}
+
+#sidebar img{
+
+    margin: 15% 15% 15% ;
+    
+    margin-bottom: 20%;
+    width: 3.5rem;
+    height: 3.5rem;
+    align-items: center;
+
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+}
+
+.sidebar-nav li {
+    margin: 1.5rem 0; /* Vertical spacing using rem */
+    white-space: 5%;
+   
+}
+
+.sidebar-nav a {
+    text-decoration: underline;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0 0;
+    display: block; /* Make the links take up the full width of the sidebar */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 0.5rem;
+    
+}
+.sidebar-nav a:hover{
+    background-color: rgb(96, 124, 225); /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #000; /* Change text color on hover */
+}
+/* Sidebar Styling */
+
+
+/* Profile Empty Section */
+#profile-empty {  /* Changed to match ID */
+    flex: 1;
+    max-height: 100vh;
+    flex-direction: row;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.empty-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    margin: 10px 0 20px;
+    font-size: 0.9em;
+}
+
+.fill-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fill-button:hover {
+    background-color: #ff6a3c;
+}
+
+/* Footer */
+.bg-custom {
+    background-color: #325D79 !important; /* Override Bootstrap with !important */
+}
+footer {
+   
+    color: white; /* Text color */
+    padding: 40px 20px; /* Increased padding for a spacious feel */
+    text-align: center; /* Center align footer text */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 0 20px; /* Add space between columns */
+    text-align: left; /* Left-align text within each section */
+    flex: 1; 
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Larger font size for headings */
+    font-weight: bold; /* Make headings bold */
+    border-bottom: 2px solid #007BFF; /* Add an underline */
+    padding-bottom: 5px; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f0f0f0; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+
+.footer p {
+    margin-top: 20px; /* More space above copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+
+    background-color: #F26627;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    
+}
+
+
+
+/* Responsive Adjustments */
+/* @media (max-width: 768px) {
+    #profile-empty {
+     
+    }
+} */

@@ -1,0 +1,414 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40%;
+    color: rgb(5, 5, 5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+.about-us .content {
+    flex: 1;
+    padding: 1em;
+}
+
+.about-us .image {
+    flex: 1;
+    padding: 1em;
+    /* Placeholder styling */
+    background-color: #fff;
+}
+.image {
+    margin-top: -5%;
+
+    
+}
+
+
+
+/* FAQ Section */
+.FaQ > h2 {
+    margin-left: 3rem ;
+   
+    letter-spacing: 3px;
+  }
+  
+  
+.faq {
+    padding: 2rem 2.5rem;
+    background-color: #dff0e9;
+}
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10px; justify-content: space-around;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #f1f7f5;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .FaQ {
+    padding: 2rem 2.5rem;
+    background-color: #dff0e9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  .faq.active {
+    border: none;
+    border-radius: 10px;
+  }
+  
+
+.faq h2 {
+    margin-bottom: 1em;
+}
+
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    margin-top: 2.5rem ;
+    
+    border-radius: 8px;
+    max-width: 100%;
+   
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1em;
+}
+
+.info-item .icon {
+    font-size: 1.2rem;
+    color: #f57c00; /* Icon color */
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #e8f5e9;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fff;
+}
+
+.form-group input {
+    flex: 1;
+}
+
+.contact-form button {
+    padding: 1em;
+    background-color: #00897b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    
+}
+
+.contact-form button:hover {
+    background-color: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+    }
+}
+/* Footer */
+footer {
+    background-color: #325D79; /* Background color */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Increased padding for a spacious feel */
+    text-align: center; /* Center align footer text */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly around items */
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-links div {
+    margin: 0 20px; /* Add space between columns */
+    text-align: left; /* Left-align text within each section */
+    flex: 1; /* Make sections flexible */
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Larger font size for headings */
+    font-weight: bold; /* Make headings bold */
+    border-bottom: 2px solid #007BFF; /* Add an underline */
+    padding-bottom: 5px; /* Padding under headings */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f0f0f0; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.footer-links ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+footer p {
+    margin-top: 20px; /* More space above copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 70%; /* Set a reduced width for the email input */
+    margin-bottom: 1rem;
+}
+
+button {
+   
+    padding: 10px 20px;
+    background-color: #F26627;
+    color: white;
+    border: none;
+    border-radius: 5px;
+     /* Set a reduced width for the subscribe button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .footer-links {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .footer-links div {
+        margin-bottom: 20px; /* Space between stacked sections */
+        width: 100%; /* Full width for each section */
+    }
+
+    .footer-links h4 {
+        text-align: left; /* Ensure headings are left-aligned */
+    }
+
+    .footer-links ul li {
+        text-align: left; /* Ensure links are left-aligned */
+    }
+
+    input[type="email"] {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+   
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer-links {
+        padding-bottom: 15px;
+    }
+
+    .footer-links h4 {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 5px;
+    }
+
+    input[type="email"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us .image {
+        margin-top: 1em;
+    }
+
+    
+
+    .contact form {
+        width: 100%;
+    }
+}

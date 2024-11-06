@@ -1,0 +1,421 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-size: 16px; /* Default base font-size for rem units */
+}
+
+/* Flex container to hold sidebar + content */
+.main-wrapper {
+    display: flex;
+    min-height: 100vh; 
+}
+
+/* Sidebar Styling */
+#sidebar {
+    background-color: #f4f4f4;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+   
+}
+
+#sideba img{
+
+    margin: 20% 20% 20% ;
+    margin-bottom: 20%;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+}
+
+.sidebar-nav li {
+    margin: 1.5rem 0; /* Vertical spacing using rem */
+    white-space: 5%;
+   
+}
+
+.sidebar-nav a {
+    text-decoration: underline;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0 0;
+    display: block; /* Make the links take up the full width of the sidebar */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 0.5rem;
+    
+}
+.sidebar-nav a:hover{
+    background-color: rgb(96, 124, 225); /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #000; /* Change text color on hover */
+}
+
+/* Main Content */
+.main-content {
+    display: flexbox;
+    flex: 1;
+    flex-direction: row;
+    
+    padding: 2rem; /* Use rem for consistent padding */
+    background-image: url('../images/background1.jpg'); /* Ensure the path is correct */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+
+/* Main header styling */
+.header {
+    
+    display: grid;
+    grid-template-columns: 100px 1fr; /* Two columns: logo and content */
+    grid-template-rows: auto auto; /* Rows: company info and details */
+    gap: 0rem;
+    padding: 2rem;
+    margin-bottom: -2rem;
+    margin-top: -3rem;
+    background-color:transparent;
+    align-items: center;
+}
+
+/* Logo section */
+.logo img {
+    width: 80px;
+    height: auto;
+    object-fit: contain; /* Maintain logo aspect ratio */
+}
+
+/* Company name and info */
+.company-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.company-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Company details section */
+.company-details {
+    grid-column: span 2; /* Spans across both columns */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.detail-item i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    flex-shrink: calc();
+    color:#00695c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Stack the logo and company info */
+    .header {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+        grid-template-rows: auto auto auto; /* Additional row for stacking */
+        text-align: center; /* Center content on small screens */
+    }
+
+    /* Adjust company name font size */
+    .company-info h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Reduce padding on smaller screens */
+    .header {
+        padding: 1rem;
+    }
+
+    /* Flex-wrap company details */
+    .company-details {
+        justify-content: center; /* Center the icons and details */
+        gap: 1rem;
+        font-size: 0.8rem; /* Reduce text size */
+    }
+
+    /* Adjust logo size for smaller screens */
+    .logo img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for extra small screens */
+    .company-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .company-details {
+        font-size: 0.7rem;
+        gap: 0.5rem; /* Smaller gap between details */
+    }
+
+    .header {
+        padding: 0.5rem;
+    }
+}
+
+
+/* Job Card General Styling */
+.job-offers{
+    flex: 1;
+    align-items: first baseline;
+    flex-wrap: wrap;
+   
+}
+.job-offers h2{
+   margin: 1rem 2rem;
+   color: #777;
+}
+.job-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    height: 5%;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header - posted date and bookmark */
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+.posted-date {
+    background-color: #e0f7fa;
+    color: #00695c;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-left: 2.5rem;
+}
+
+.bookmark-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00695c;
+    font-size: 1.2rem;
+}
+
+/* Job Details */
+.job-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+.job-icon {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #00695c;
+    
+}
+
+.job-title {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.company-name {
+    margin: 0rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Job Extra Info */
+.job-extra-info {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    margin-top: 0rem;
+   /* Ensures button pushes to the right */
+    
+    margin-left: 3rem;
+    /* gap: 0.5rem; Space between icons and button */
+}
+
+.job-info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    /* margin-left: 2.5rem; */
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.job-info-item i {
+    margin-right: 0.5rem;
+    color: #00695c;
+}
+
+/* Footer - Apply button */
+.job-card-footer {
+    margin-top: 0rem;
+    text-align: right;
+    margin-left:auto ;
+}
+
+.btn-apply {
+    background-color: #00695c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #df840c;
+}
+
+/* Hover and Responsive Effects */
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .job-extra-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+   
+
+    .btn-apply {
+       
+        width: 100%;
+    }
+}
+.bg-custom {
+    background-color: #325D79 !important; /* Override Bootstrap with !important */
+}
+footer {
+   
+    color: white; /* Text color */
+    padding: 40px 20px; /* Increased padding for a spacious feel */
+    text-align: center; /* Center align footer text */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 0 20px; /* Add space between columns */
+    text-align: left; /* Left-align text within each section */
+    flex: 1; 
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Larger font size for headings */
+    font-weight: bold; /* Make headings bold */
+    border-bottom: 2px solid #007BFF; /* Add an underline */
+    padding-bottom: 5px; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f0f0f0; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+
+.footer p {
+    margin-top: 20px; /* More space above copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+
+    background-color: #F26627;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .job-card {
+        flex-direction: column;
+    }
+}
