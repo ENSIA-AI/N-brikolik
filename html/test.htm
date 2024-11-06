@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+
+
+.resume-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.resume-content {
+    flex-grow: 1;
+}
+
+.resume-content h3 {
+    margin-bottom: 5px;
+}
+
+.rating span {
+    color: gold;
+}
+
+.work-section {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.work-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    color: #555;
+}
+
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.content-area {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.work-item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="profile-container">
+        <h1>John Doe</h1>
+        <h2>Doe</h2>
+        <p class="job-title">Graphic Designer</p>
+        <div class="info">
+            <span>💼 Design Industry</span>
+            <span>📆 5+ Years</span>
+            <span>📍 New York, USA</span>
+        </div>
+    </div>
+
+    <div class="resume-container">
+        <div class="resume-card">
+            <img src="https://via.placeholder.com/50" alt="Profile Photo" class="profile-photo">
+            <div class="resume-content">
+                <h3>Resume</h3>
+                <p>Experienced in graphic design, specializing in creating visually compelling solutions for clients.</p>
+                <div class="rating">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-section">
+        <h3>My Work</h3>
+        <div class="tabs">
+            <span class="tab active" data-category="photography">Photography</span>
+            <span class="tab" data-category="design">Design</span>
+            <span class="tab" data-category="redaction">Redaction</span>
+            <span class="tab" data-category="development">Development</span>
+        </div>
+        <div id="content-area" class="content-area">
+            <div class="work-item">Photo 1</div>
+            <div class="work-item">Photo 2</div>
+            <div class="work-item">Photo 3</div>
+        </div>
+    </div>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab');
+    const contentArea = document.getElementById('content-area');
+
+    // Content for each category
+    const content = {
+        photography: `
+            <div class="work-item">Photo 1</div>
+            <div class="work-item">Photo 2</div>
+            <div class="work-item">Photo 3</div>
+        `,
+        design: `
+            <div class="work-item">Design 1</div>
+            <div class="work-item">Design 2</div>
+            <div class="work-item">Design 3</div>
+        `,
+        redaction: `
+            <div class="work-item">Redaction 1</div>
+            <div class="work-item">Redaction 2</div>
+            <div class="work-item">Redaction 3</div>
+        `,
+        development: `
+            <div class="work-item">Dev 1</div>
+            <div class="work-item">Dev 2</div>
+            <div class="work-item">Dev 3</div>
+        `
+    };
+
+    function updateContent(category) {
+        contentArea.innerHTML = content[category];
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tab.classList.add('active');
+            updateContent(tab.getAttribute('data-category'));
+        });
+    });
+
+    // Set initial content
+    updateContent('photography');
+});
+
+    </script>
+</body>
+</html>
