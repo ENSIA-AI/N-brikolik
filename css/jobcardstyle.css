@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fc; /* Soft background color */
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: flex-start; /* Aligns content to the top */
+}
+
+/* Main container for the job card */
+.containerjob {
+    background-color: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    width: 25%; /* 25% of the screen width */
+    margin-left: 0; /* Align card to the left side */
+    margin-top: 20px; /* Space from the top */
+    max-width: 100%; /* Ensure it doesn't exceed 100% width */
+}
+
+/* Time and icon container at the top */
+.containerjob .top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Add spacing */
+}
+
+.timee {
+    font-size: 14px;
+    color: #6c757d; /* Muted text color */
+}
+
+.containerjob img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Job title section */
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40; /* Darker text color */
+    margin-bottom: 5px;
+}
+
+.company-name {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px; /* Spacing below company */
+}
+
+/* Job details section */
+.job-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Spacing above the button */
+}
+
+.job-details .detail-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+.job-details .detail-item img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Button styling */
+.containerjob button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* Align button to the right */
+}
+
+.containerjob button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .containerjob {
+        width: 100%; /* Full width on small screens */
+        padding: 15px;
+    }
+
+    .job-details {
+        flex-direction: column; /* Stack details vertically */
+    }
+
+    .job-details .detail-item {
+        justify-content: flex-start;
+    }
+
+    .containerjob button {
+        width: 100%; /* Full-width button on small screens */
+        margin-top: 15px; /* Spacing above the button */
+    }
+}

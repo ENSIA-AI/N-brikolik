@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Sidebar</title>
+    <link rel="stylesheet" href="/css/filtrage.css">
+</head>
+<body>
+
+    <div class="filter-sidebar">
+        <h2>Filter Options</h2>
+
+        <div class="filter-section">
+            <label for="location">Location</label>
+            <select id="location">
+                <option>Select city</option>
+                <option>New York</option>
+                <option>San Francisco</option>
+                <option>Chicago</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="filter-section">
+            <label>Category</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox"> Commerce</label>
+                <label><input type="checkbox"> Telecommunications</label>
+                <label><input type="checkbox"> Hotels & Tourism</label>
+                <label><input type="checkbox"> Education</label>
+                <label><input type="checkbox"> Financial Services</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <label>Opportunity Type</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox"> Job offer</label>
+                <label><input type="checkbox"> Internship</label>
+                <label><input type="checkbox"> Freelance</label>
+                <label><input type="checkbox"> Courses</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <label>Date Posted</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox"> All</label>
+                <label><input type="checkbox"> Last Hour</label>
+                <label><input type="checkbox"> Last 24 Hours</label>
+                <label><input type="checkbox"> Last 7 Days</label>
+                <label><input type="checkbox"> Last 30 Days</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <label>Prices</label>
+            <div class="slider-container">
+                <input type="range" min="0" max="1000" value="500">
+                <span>$0 - $1000</span>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <label>Salary</label>
+            <div class="slider-container">
+                <input type="range" min="0" max="5000" value="2500">
+                <span>$0 - $5000</span>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <label>Tags</label>
+            <div class="tags">
+                <span class="tag">Engineering</span>
+                <span class="tag">Design</span>
+                <span class="tag">Sales</span>
+                <span class="tag">Marketing</span>
+                <span class="tag">Management</span>
+                <span class="tag">Tech</span>
+                <!-- Add more tags as needed -->
+            </div>
+        </div>
+
+        <button>search</button>
+    </div>
+
+</body>
+</html>

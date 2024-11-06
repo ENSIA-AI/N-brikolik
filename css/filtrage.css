@@ -1,0 +1,179 @@
+
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Sidebar container */
+.filter-sidebar {
+    width: 320px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(1.02);
+}
+
+.filter-sidebar:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+.filter-sidebar h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Filter sections */
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Styled dropdown */
+.filter-section select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccd4e0;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    background-image: url('https://img.icons8.com/ios-filled/50/000000/expand-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    transition: color 0.2s;
+}
+
+.checkbox-container label:hover {
+    color: #309689;
+}
+
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #309689;
+    background-image: url('https://img.icons8.com/ios-glyphs/30/ffffff/checkmark--v1.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Slider styles */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.slider-container input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    background: #dcdcdc;
+    height: 4px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #309689;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Tags styling */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 6px 12px;
+    background-color: #d2eef1;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #309689;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: #309689;
+    color: #fff;
+}
+
+/* Submit button */
+.filter-sidebar button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #309689;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-sidebar button:hover {
+    background-color: #26786d;
+}
