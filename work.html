@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n'Brecolik</title>
+    <link rel="stylesheet" href="../css/work.css"> 
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <img class="logo" src="../pictures/84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="Company Logo" height="100rem">
+            
+              <button class="hamburger" onclick="toggleMenu()">☰</button>
+              <nav id="navMenu" class="nav-menu">
+                  <a href="home.html">Home</a>
+                  <a href="work.html">work</a>
+                  <a href="courses.html">courses</a>
+                  <a href="partners.html">partners</a>
+                  <a href="aboutus.html">about us</a>
+              </nav>
+            
+            <div class="auth-buttons">
+                <button class="login" aria-label="Login">Login</button>
+                <button class="sign" aria-label="Sign Up">Sign Up</button>
+            </div>
+        </nav>
+        
+
+                
+        
+        <h1 class="title">Work</h1>
+
+    </header>
+    
+    <section class="post">
+    <h2>Ready to post your jobb opportunities ?</h2>
+    <button >Get Started</button>
+    </section>
+    <button class="filter-toggle" id="filterToggle">Show Filter</button>
+            
+    <div class="content">
+        <div class="filter-container">
+            <!-- Toggle Button for Filter -->
+            
+            <div class="filter">
+                <h3><b>Search By Job Title</b></h3>
+                <input type="text" class="search" placeholder="Job title or company">
+                
+                <h3><b>Location</b></h3>
+                <input list="city" name="city" class="city" placeholder="Choose a City" value="Alger">
+                <datalist id="city">
+                    <option class="option" value="Tizi Ouzou"></option>
+                    <option class="option" value="Bejaia"></option>
+                    <option class="option" value="Boumerdas"></option>
+                    <option class="option" value="Alger"></option>
+                </datalist>
+    
+                <h3>Category</h3>
+                <div class="category">
+                    <input id="com" type="checkbox" name="category" value="Commerce">
+                    <label for="com">Commerce</label><br>
+                    <input id="telc" type="checkbox" name="category" value="Telecommunication">
+                    <label for="telc">Telecommunication</label><br>
+                    <input id="Hotel" type="checkbox" name="category" value="Hotels & Tourism">
+                    <label for="Hotel">Hotels & Tourism</label><br>
+                    <input id="Edu" type="checkbox" name="category" value="Education">
+                    <label for="Edu">Education</label><br>
+                    <input id="fin" type="checkbox" name="category" value="Financial Services">
+                    <label for="fin">Financial Services</label>
+                </div>
+    
+                <button class="fields">Show More</button>
+    
+                <h3>Job Type</h3>
+                <div class="type">
+                    <input id="full" type="checkbox" name="type" value="Full time">
+                    <label for="full">Full Time</label><br>
+                    <input id="Part" type="checkbox" name="type" value="Part Time">
+                    <label for="Part">Part Time</label><br>
+                    <input id="free" type="checkbox" name="type" value="Freelance">
+                    <label for="free">Freelance</label><br>
+                    <input id="seas" type="checkbox" name="type" value="Seasonal">
+                    <label for="seas">Seasonal</label>
+                </div>
+    
+                <h3>Experience Level</h3>
+                <div class="Experience">
+                    <input id="No-exp" type="checkbox" name="Experience" value="no-experience">
+                    <label for="No-exp">No-experience</label><br>
+                    <input id="Fresher" type="checkbox" name="Experience" value="Fresher">
+                    <label for="Fresher">Fresher</label><br>
+                    <input id="inter" type="checkbox" name="Experience" value="Intermediate">
+                    <label for="inter">Intermediate</label><br>
+                    <input id="exp" type="checkbox" name="Experience" value="Expert">
+                    <label for="exp">Expert</label>
+                </div>
+    
+                <h3>Date Posted</h3>
+                <div class="date">
+                    <input id="AL" type="checkbox" name="date" value="All">
+                    <label for="AL">All</label><br>
+                    <input id="Last" type="checkbox" name="date" value="Last Hour">
+                    <label for="Last">Last Hour</label><br>
+                    <input id="Last24" type="checkbox" name="date" value="Last 24 Hours">
+                    <label for="Last24">Last 24 Hours</label><br>
+                    <input id="7days" type="checkbox" name="date" value="Last 7 Days">
+                    <label for="7days">Last 7 Days</label>
+                </div>
+    
+                <h3>Salary</h3>
+                <div class="salary">
+                    <input type="range" required name="range" value="100" min="0" max="9999" step="100">
+                </div>
+    
+                <button class="apply">Apply</button>
+            </div>
+            
+        </div>
+        
+<div class="offer">
+    <div class="he">
+    <h3>Job Offers</h3>
+    <input list="sort" name="sort" class="sort" placeholder="sort by ...." value="Sort By Latest">
+<datalist id="sort">
+<option class="option" value="Tizi Ouzou"></option>
+<option class="option" value="Bejaia"></option>
+<option class="option" value="Boumerdas"></option>
+<option class="option" value="Alger"></option>
+</datalist>
+</div>
+    <div class="job">
+        <div class="state">
+            <button>13 min ago</button>
+            <h3 >available</h3>
+        </div>
+        <div class="company">        
+            <img src="..\pictures\84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="logo">
+            <h2>Regional Creative Facilitator</h2>
+        </div>
+
+        <h4>Wisozk - Becker Co</h4>
+        <div class="info">
+            <div class="l">
+              <img src="..\pictures\portfolio (1).png" alt="job">media
+            </div>
+            <div class="l">
+              <img src="..\pictures\clock.png" alt="time">part time
+            </div>
+              <div class="l">
+                <img src="..\pictures\salary.png" alt="salary">2000$
+              </div>
+              <div class="l">
+                <img src="..\pictures\location.png" alt="location">Alger
+              </div>
+              
+              <button class="details">Job Details</button>
+          </div> 
+        
+    </div>
+    <div class="job">
+        <div class="state">
+            <button>13 min ago</button>
+            <h3 >available</h3>
+        </div>
+        <div class="company">        
+            <img src="..\pictures\84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="logo">
+            <h2>Regional Creative Facilitator</h2>
+        </div>
+
+        <h4>Wisozk - Becker Co</h4>
+        <div class="info">
+            <div class="l">
+              <img src="..\pictures\portfolio (1).png" alt="job">media
+            </div>
+            <div class="l">
+              <img src="..\pictures\clock.png" alt="time">part time
+            </div>
+              <div class="l">
+                <img src="..\pictures\salary.png" alt="salary">2000$
+              </div>
+              <div class="l">
+                <img src="..\pictures\location.png" alt="location">Alger
+              </div>
+              
+              <button class="details">Job Details</button>
+          </div> 
+    </div>
+    <div class="job">
+        <div class="state">
+            <button>13 min ago</button>
+        <h3 >available</h3>
+    </div>
+        <div class="company">        
+            <img src="..\pictures\84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="logo">
+            <h2>Regional Creative Facilitator</h2>
+        </div>
+
+        <h4>Wisozk - Becker Co</h4>
+        <div class="info">
+            <div class="l">
+              <img src="..\pictures\portfolio (1).png" alt="job">media
+            </div>
+            <div class="l">
+              <img src="..\pictures\clock.png" alt="time">part time
+            </div>
+              <div class="l">
+                <img src="..\pictures\salary.png" alt="salary">2000$
+              </div>
+              <div class="l">
+                <img src="..\pictures\location.png" alt="location">Alger
+              </div>
+              
+              <button class="details">Job Details</button>
+          </div> 
+    </div>
+    <div class="start">
+        <h2>Ready to post your job services  ?</h2>
+        <button >Get Started</button>
+    </div>
+    <div class="he">
+        <h3>Job Services</h3>
+        <input list="sort" name="sort" class="sort" placeholder="sort by ...." value="Sort By Latest">
+    <datalist id="sort">
+    <option class="option" value="Tizi Ouzou"></option>
+    <option class="option" value="Bejaia"></option>
+    <option class="option" value="Boumerdas"></option>
+    <option class="option" value="Alger"></option>
+    </datalist>
+    </div>
+        <div class="job">
+            <div class="state">
+                <button>13 min ago</button>
+                <h3 >available</h3>
+            </div>
+            <div class="company">        
+                <img src="..\pictures\84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="logo">
+                <h2>Regional Creative Facilitator</h2>
+            </div>
+    
+            <h4>Wisozk - Becker Co</h4>
+            <div class="info">
+                <div class="l">
+                  <img src="..\pictures\portfolio (1).png" alt="job">media
+                </div>
+                <div class="l">
+                  <img src="..\pictures\clock.png" alt="time">part time
+                </div>
+                  <div class="l">
+                    <img src="..\pictures\salary.png" alt="salary">2000$
+                  </div>
+                  <div class="l">
+                    <img src="..\pictures\location.png" alt="location">Alger
+</div>
+
+<button class="details">Job Details</button>
+</div> 
+
+            
+        </div>
+        
+</div>
+
+</div>
+<footer>
+    <div class="footer-links">
+        <div>
+            <h4>Company</h4>
+            <ul>
+                <li><a href="aboutus.htm">About Us</a></li>
+                <li><a href="work.htm">Work</a></li>
+                <li><a href="aboutus.htm">FAQ</a></li>  <!--make it scroll untill faq-->
+            </ul>
+        </div>
+        <div>
+            <h4>Job Categories</h4>
+            <ul>
+                <li><a href="work.htm">Technology</a></li>
+                <li><a href="work.htm">Design</a></li>
+                <li><a href="work.htm">Finance</a></li> <!--resultat de filtrage-->
+            </ul>
+        </div>
+        <div>
+            <h4>Newsletter</h4>
+            <p>Subscribe for the latest updates.</p>
+            <input type="email" placeholder="Your email">
+            <br>
+            <button>Subscribe Now</button>
+        </div>
+    </div>
+    <p>&copy; 2024 N'brecolik. All Rights Reserved.</p>
+</footer>
+<script>
+document.getElementById('filterToggle').addEventListener('click', function() {
+    var filter = document.querySelector('.filter');
+    var offerSection = document.querySelector('.offer');
+
+    // Toggle the visibility of the filter
+    if (filter.style.display === 'none' || filter.style.display === '') {
+        filter.style.display = 'block'; // Show filter bar
+
+        // Insert filter bar above job cards
+        offerSection.insertBefore(filter, offerSection.firstChild);
+
+        this.textContent = 'Hide Filter'; // Change button text
+    } else {
+        filter.style.display = 'none'; // Hide filter bar
+        this.textContent = 'Show Filter'; // Change button text
+    }
+});
+
+</script>
+
+    
+
+    
+    
+</body>
+</html>
