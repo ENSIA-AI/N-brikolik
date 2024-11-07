@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
+    <title>n'Brecolik</title>
     <link rel="stylesheet" href="../css/work.css"> 
 </head>
 <body>
@@ -15,15 +15,19 @@
               <button class="hamburger" onclick="toggleMenu()">☰</button>
               <nav id="navMenu" class="nav-menu">
                   <a href="home.html">Home</a>
-                  <a href="work.html">work</a>
-                  <a href="courses.html">courses</a>
-                  <a href="partners.html">partners</a>
-                  <a href="aboutus.html">about us</a>
+                  <a href="/html/work.html">work</a>
+                  <a href="/html/courses.htm">courses</a>
+                  <a href="/html/partners.htm">partners</a>
+                  <a href="/html/aboutus.htm">about us</a>
               </nav>
             
             <div class="auth-buttons">
-                <button class="login" aria-label="Login">Login</button>
+                <a href="/html/login.html">
+                    <button class="login" aria-label="Login">Login</button>
+                </a>
+              <a href="/html/login.html">
                 <button class="sign" aria-label="Sign Up">Sign Up</button>
+            </a>
             </div>
         </nav>
         
@@ -122,13 +126,15 @@
 <div class="offer">
     <div class="he">
     <h3>Job Offers</h3>
-    <input list="sort" name="sort" class="sort" placeholder="sort by ...." value="Sort By Latest">
-<datalist id="sort">
-<option class="option" value="Tizi Ouzou"></option>
-<option class="option" value="Bejaia"></option>
-<option class="option" value="Boumerdas"></option>
-<option class="option" value="Alger"></option>
-</datalist>
+    <label for="sorting"></label>
+    <select id="sorting" name="sorting">
+        <option value="latest" selected>Select by Latest</option>
+        <option value="oldest">Select by Oldest</option>
+        <option value="popularity">Select by Popularity</option>
+        <option value="rating">Select by Rating</option>
+        <option value="price-low-to-high">Price: Low to High</option>
+        <option value="price-high-to-low">Price: High to Low</option>
+    </select>
 </div>
     <div class="job">
         <div class="state">
@@ -154,10 +160,7 @@
               <div class="l">
                 <img src="..\pictures\location.png" alt="location">Alger
               </div>
-              
-              <a href="/html/jobs.htm">
-                <button class="details" >Job Details</button>
-                </a>
+           
           </div> 
         
     </div>
@@ -185,9 +188,11 @@
               <div class="l">
                 <img src="..\pictures\location.png" alt="location">Alger
               </div>
+              
               <a href="/html/jobs.htm">
-              <button class="details" >Job Details</button>
-              </a>
+
+                <button class="details">Job Details</button>
+                </a>
           </div> 
     </div>
     <div class="job">
@@ -216,7 +221,8 @@
               </div>
               
               <a href="/html/jobs.htm">
-                <button class="details" >Job Details</button>
+
+                <button class="details">Job Details</button>
                 </a>
           </div> 
     </div>
@@ -226,13 +232,15 @@
     </div>
     <div class="he">
         <h3>Job Services</h3>
-        <input list="sort" name="sort" class="sort" placeholder="sort by ...." value="Sort By Latest">
-    <datalist id="sort">
-    <option class="option" value="Tizi Ouzou"></option>
-    <option class="option" value="Bejaia"></option>
-    <option class="option" value="Boumerdas"></option>
-    <option class="option" value="Alger"></option>
-    </datalist>
+        <label for="sorting"></label>
+        <select id="sorting" name="sorting">
+            <option value="latest" selected>Select by Latest</option>
+            <option value="oldest">Select by Oldest</option>
+            <option value="popularity">Select by Popularity</option>
+            <option value="rating">Select by Rating</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="price-high-to-low">Price: High to Low</option>
+        </select>
     </div>
         <div class="job">
             <div class="state">
@@ -258,9 +266,9 @@
                   <div class="l">
                     <img src="..\pictures\location.png" alt="location">Alger
 </div>
-
 <a href="/html/jobs.htm">
-    <button class="details" >Job Details</button>
+
+    <button class="details">Job Details</button>
     </a>
 </div> 
 
@@ -275,17 +283,17 @@
         <div>
             <h4>Company</h4>
             <ul>
-                <li><a href="aboutus.htm">About Us</a></li>
-                <li><a href="work.htm">Work</a></li>
-                <li><a href="aboutus.htm">FAQ</a></li>  <!--make it scroll untill faq-->
+                <li><a href="/html/aboutus.htm">About Us</a></li>
+                <li><a href="/html/work.html">Work</a></li>
+                <li><a href="/html/aboutus.htm">FAQ</a></li>  <!--make it scroll untill faq-->
             </ul>
         </div>
         <div>
             <h4>Job Categories</h4>
             <ul>
-                <li><a href="work.htm">Technology</a></li>
-                <li><a href="work.htm">Design</a></li>
-                <li><a href="work.htm">Finance</a></li> <!--resultat de filtrage-->
+                <li><a href="/html/work.html">Technology</a></li>
+                <li><a href="/html/work.html">Design</a></li>
+                <li><a href="/html/work.html">Finance</a></li> <!--resultat de filtrage-->
             </ul>
         </div>
         <div>
@@ -316,6 +324,21 @@ document.getElementById('filterToggle').addEventListener('click', function() {
         this.textContent = 'Show Filter'; // Change button text
     }
 });
+const sortingSelect = document.getElementById('sorting');
+
+sortingSelect.addEventListener('change', function() {
+    const selectedValue = sortingSelect.value;
+    console.log("User selected: " + selectedValue);
+});
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    // Check if the menu is currently visible
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none'; // Hide the menu
+    } else {
+        navMenu.style.display = 'block'; // Show the menu
+    }
+}
 
 </script>
 
