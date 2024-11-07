@@ -12,151 +12,155 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="m-5">
-            <span id="deploma">Workplace skills ></span>
-            <span id="course">Communication</span>
-        </h1>
-    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Section -->
+            <div class="d-none d-md-block col-md-2" id="sidebar">
+                <div class="logo"><img src="/mnt/data/image.png" alt="logo" /></div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">Service Offers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Reception</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My Courses</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-    <section class="row">
-        <div class="col-lg-6 col-md-6 ps-5">
-            <div class="accordion m-2" id="lessons-accordion">
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Communication Skills
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Verbal, non-verbal, and written communication techniques.
+            <!-- Main Content Section -->
+            <div class="col-md-10 content">
+                <header>
+                    <h1 class="m-5">
+                        <a href="diploma.html"><span id="deploma">Workplace skills ></span></a>
+                        <span id="course">Communication</span>
+                    </h1>
+                </header>
+
+                <section class="row">
+                    <div class="col-lg-6 col-md-6 ps-5">
+                        <div class="chapter-container">
+                            <!-- Chapter 1 -->
+                            <div class="chapter" onclick="toggleChapter('chapter1')">
+                                <span>Chapter 1</span>
+                                <span class="toggle-icon">&#9660;</span>
+                            </div>
+                            <div id="chapter1" class="lesson-container">
+                                <ul>
+                                    <li><a href="#">Lesson 1: blah blah blah</a></li>
+                                    <li><a href="#"><strong>Lesson 2: blah blah blah</strong></a></li>
+                                    <li><a href="#">Lesson 3: blah blah blah</a></li>
+                                    <li><a href="#" onclick="toggleQMC(event, 'qmc1')">Quiz</a></li>
+                                    <div id="qmc1" class="qmc-container">
+                                        <p><strong>QMC: Which of the following is correct?</strong></p>
+                                        <ul>
+                                            <li><input type="radio" name="q1" id="q1a"><label for="q1a"> Option A</label></li>
+                                            <li><input type="radio" name="q1" id="q1b"><label for="q1b"> Option B</label></li>
+                                            <li><input type="radio" name="q1" id="q1c"><label for="q1c"> Option C</label></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                    
+                            <!-- Chapter 2 (initially open) -->
+                            <div class="chapter active" onclick="toggleChapter('chapter2')">
+                                <span>Chapter 2</span>
+                                <span class="toggle-icon">&#9650;</span>
+                            </div>
+                            <div id="chapter2" class="lesson-container active">
+                                <ul>
+                                    <li><a href="#">Lesson 1: blah blah blah</a></li>
+                                    <li><a href="#"><strong>Lesson 2: blah blah blah</strong></a></li>
+                                    <li><a href="#">Lesson 3: blah blah blah</a></li>
+                                    <li><a href="#" onclick="toggleQMC(event, 'qmc2')">Quiz</a></li>
+                                    <div id="qmc2" class="qmc-container">
+                                        <p><strong>QMC: What does HTML stand for?</strong></p>
+                                        <ul>
+                                            <li><input type="radio" name="q2" id="q2a"><label for="q2a"> HyperText Markup Language</label></li>
+                                            <li><input type="radio" name="q2" id="q2b"><label for="q2b"> HighText Markup Language</label></li>
+                                            <li><input type="radio" name="q2" id="q2c"><label for="q2c"> HyperTool Markup Language</label></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                    
+                            <!-- Chapter 3 (initially closed) -->
+                            <div class="chapter" onclick="toggleChapter('chapter3')">
+                                <span>Chapter 3</span>
+                                <span class="toggle-icon">&#9660;</span>
+                            </div>
+                            <div id="chapter3" class="lesson-container">
+                                <ul>
+                                    <li><a href="#">Lesson 1: blah blah blah</a></li>
+                                    <li><a href="#"><strong>Lesson 2: blah blah blah</strong></a></li>
+                                    <li><a href="#">Lesson 3: blah blah blah</a></li>
+                                    <li><a href="#" onclick="toggleQMC(event, 'qmc3')">Quiz</a></li>
+                                    <div id="qmc3" class="qmc-container">
+                                        <p><strong>QMC: What is CSS used for?</strong></p>
+                                        <ul>
+                                            <li><input type="radio" name="q3" id="q3a"><label for="q3a"> Styling web pages</label></li>
+                                            <li><input type="radio" name="q3" id="q3b"><label for="q3b"> Storing data</label></li>
+                                            <li><input type="radio" name="q3" id="q3c"><label for="q3c"> Structuring content</label></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        
+                    
+
+                            <!-- Additional Chapters as needed -->
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Teamwork & Collaboration
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Working effectively in teams, conflict resolution.
+
+                    <div class="col-lg-6 col-md-6 px-5 align-video">
+                        <div class="card mx-2">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/-UYO1ORZVkU?si=k6ho1DTw-6Bc0tlo" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Professor Benbachir</h5>
+                                <p class="card-text">How do you reach minds through the door of the heart?</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Problem-Solving & Critical Thinking
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Analyzing issues, making informed decisions.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                            Adaptability & Flexibility
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Managing change, learning agility.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Leadership Basics
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Motivating others, delegation, basic project management.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-2">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Professionalism & Work Ethic
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#lessons-accordion">
-                        <div class="accordion-body">
-                            Accountability, reliability, workplace etiquette.
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 p-5">
-            <div class="card mx-2">
-                <!-- Video Embed Section -->
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/-UYO1ORZVkU?si=k6ho1DTw-6Bc0tlo" title="YouTube video"
-                        allowfullscreen></iframe>
-                </div>
-                <!-- Card Body with Title -->
-                <div class="card-body">
-                    <h5 class="card-title">Professor Benbachir</h5>
-                    <p class="card-text">How do you reach minds through the door of the heart?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="aboutus.htm">About Us</a></li>
-                    <li><a href="work.htm">Work</a></li>
-                    <li><a href="aboutus.htm">FAQ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Job Categories</h4>
-                <ul>
-                    <li><a href="work.htm">Technology</a></li>
-                    <li><a href="work.htm">Design</a></li>
-                    <li><a href="work.htm">Finance</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Newsletter</h4>
-                <p>Reach us out!</p>
-                <input type="email" placeholder="Your email">
-                <button>send email</button>
-            </div>
-        </div>
-        <p>&copy; 2024 Nbreecolik. All Rights Reserved.</p>
-    </footer>
-
+    </div>
+                <!-- Footer -->
+                <footer>
+                    <div class="footer-links">
+                        <div>
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="aboutus.htm">About Us</a></li>
+                                <li><a href="work.htm">Work</a></li>
+                                <li><a href="aboutus.htm">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Job Categories</h4>
+                            <ul>
+                                <li><a href="work.htm">Technology</a></li>
+                                <li><a href="work.htm">Design</a></li>
+                                <li><a href="work.htm">Finance</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Newsletter</h4>
+                            <p>Reach us out!</p>
+                            <input type="email" placeholder="Your email">
+                            <button>send email</button>
+                        </div>
+                    </div>
+                    <p>&copy; 2024 Nbreecolik. All Rights Reserved.</p>
+                </footer>
+        
     <!-- Bootstrap JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-
+    <script src="/js/learning.js"></script>
 </body>
 
 </html>

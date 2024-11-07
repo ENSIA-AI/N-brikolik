@@ -1,38 +1,136 @@
+#sidebar {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+#sidebar .logo img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+#sidebar .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#sidebar .sidebar-nav ul li {
+    margin: 15px 0;
+}
+
+#sidebar .sidebar-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+#sidebar .sidebar-nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Main content styling */
+.content {
+    padding: 20px;
+}
+
+/* Header styling */
 #deploma {
     color: gray;
 }
+
 #course {
     color: black;
 }
 
-
-
-
-
-/* color for the accordion buttons */
-.accordion-button {
-    background-color: #dddddd; 
-    color: black;
-}
-/* Change color when the accordion is open */
-.accordion-button:not(.collapsed) {
-    background-color: #84d0d5; 
-    color: black; 
+/* Chapter styling */
+.chapter-container {
+    width: 100%;
 }
 
+.chapter {
+    background-color: #cecccc;
+    padding: 2%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1%;
+    transition: background-color 0.3s ease;
+}
 
+.chapter.active {
+    background-color: #a8e6cf;
+}
 
+.chapter:hover {
+    background-color: #d0ede8;
+}
 
+.lesson-container {
+    display: none;
+    padding: 0;
+    margin-bottom: 1%;
+}
 
+.lesson-container.active {
+    display: block;
+}
 
-/* footer */
+.lesson-container ul {
+    list-style-type: disc;
+    padding-left: 5%;
+}
+
+.lesson-container ul li {
+    margin: 8px 0;
+}
+
+.lesson-container ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.lesson-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.toggle-icon {
+    font-size: 18px;
+}
+
+.qmc-container {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer styling */
 footer {
     background-color: #325D79;
     color: white;
     padding: 20px 50px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
+
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -72,10 +170,17 @@ input[type="email"] {
     margin-right: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
+}
+*{
+    overflow-x: hidden;
 }

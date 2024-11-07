@@ -1,282 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Listing</title>
-    <link rel="stylesheet" href="../css/job.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details</title>
+  <link rel="stylesheet" href="/css/job.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<div>
-    <!-- Sidebar Navigation -->
-    
-    <!-- Main Content Area -->
-    <main class="main-content">
-    <div>
-    <div class="jobinfo">
-        <section class="job-details">
-            <h1>Video editor</h1>
-            <p class="company-info">Tech Corp &bull; Full-time &bull; Remote &bull; <span>New York, USA</span></p>
-            
-            <div class="section">
-                <h2>Service Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan et eros non efficitur. Integer imperdiet nulla ut turpis convallis venenatis.</p>
-            </div>
+  <main class="main-wrapper">
+    <!-- Sidebar Section -->
+    <div class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="../images/image.png" alt="logo" />
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Job offers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
 
-            <div class="section">
-                <h2>How I can help you</h2>
-                <ul>
-                    <li>Lead the development and execution of corporate solutions strategies.</li>
-                    <li>Collaborate with the team to deliver high-quality solutions.</li>
-                    <li>Analyze and optimize project workflows.</li>
-                </ul>
-            </div>
+    <div class="content-wrapper">
+      <!-- Job Details Section -->
+      <section class="job-details">
+        <div class="job-content">
+          <span class="time-badge">10 min ago</span>
+          <h2>Professional note taking</h2>
+          <p class="company">Name of the user</p>
+          <div class="job-meta">
+            <span><i class="fas fa-building"></i>Education</span>
+            <span><i class="fas fa-briefcase"></i>24/7</span>
+            <span><i class="fas fa-dollar-sign"></i> $40,000 - $42,000</span>
+            <span><i class="fas fa-map-marker-alt"></i> Algiers</span>
+          </div>
 
-            <div class="section">
-                <h2>Special notes</h2>
-                <ul>
-                    <li>Proven experience in corporate strategy.</li>
-                    <li>Excellent communication skills.</li>
-                    <li>Advanced knowledge of data analysis tools.</li>
-                </ul>
-            </div>
+          <h3>Service Description</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at fermentum leo...</p>
+          
+          <h4>How I can help you</h4>
+          <ul class="responsibilities">
+            <li>I make summaries for you.</li>
+            <li>Organize your educational material</li>
+            <li>Help teachrs with preparing for lectures.</li>
+          </ul>
 
-            <div class="section">
-                <h2>Time estimated to finish</h2>
-                <ul>
-                    <li>7 days</li>
-                </ul>
-            </div>
+          <h4>Special notes and conditions</h4>
+          <ul class="skills">
+            <li>I finish within an hour</li>
+            <li>Only arabic notes</li>
+            <li>Problem-solving and critical thinking</li>
+          </ul>
 
-            <div class="tags">
-                <span>Sales</span>
-                <span>Tech</span>
-                <span>Remote</span>
-                <span>Full-time</span>
-            </div>
-        </div>
-            <br>
-            <div class="related-jobs">
-                <h3>Related Services</h3>
-                <div class="related-job-item">
-                   
-                 <!--ani hna-->
-                 <div class="job-card">
-                    <div class="time">10 min ago</div>
-                    <div class="bookmark-icon">&#9734;</div>
-                    
-                    <div class="logo">
-                        <img src="https://img.icons8.com/color/48/000000/circled-s.png" alt="Company Logo" style="width: 50px; height: 50px; border-radius: 50%;">
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="job-details">
-                        <div class="job-title">Corporate Solutions Executive</div>
-                        <div class="company-name">Leffler and Sons</div>
-                        
-                        <div class="job-info">
-                            <div class="job-info-item">
-                                <img src="https://img.icons8.com/ios-filled/50/4a4a4a/briefcase.png" alt="Category">
-                                <span>Commerce</span>
-                            </div>
-                            
-                            <div class="job-info-item">
-                                <img src="https://img.icons8.com/ios-filled/50/4a4a4a/clock.png" alt="Job Type">
-                                <span>Full time</span>
-                            </div>
-                            
-                            <div class="job-info-item">
-                                <img src="https://img.icons8.com/ios-filled/50/4a4a4a/money.png" alt="Salary">
-                                <span>$40000-$42000</span>
-                            </div>
-                            
-                            <div class="job-info-item">
-                                <img src="https://img.icons8.com/ios-filled/50/4a4a4a/marker.png" alt="Location">
-                                <span>New-York, USA</span>
-                            </div>
-                            &nbsp;&nbsp;&nbsp;
-                            <button type="submit">Details</button>
-                        </div>
-                    </div>
-                </div>
-                 <!--ani roht-->
-
-                </div>
-                <div class="related-job-item">
-              
-                      <!--ani hna-->
-                      <div class="job-card">
-                        <div class="time">10 min ago</div>
-                        <div class="bookmark-icon">&#9734;</div>
-                        
-                        <div class="logo">
-                            <img src="https://img.icons8.com/color/48/000000/circled-s.png" alt="Company Logo" style="width: 50px; height: 50px; border-radius: 50%;">
-                        </div>
-                        &nbsp;&nbsp;
-                        <div class="job-details">
-                            <div class="job-title">Corporate Solutions Executive</div>
-                            <div class="company-name">Leffler and Sons</div>
-                            
-                            <div class="job-info">
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/briefcase.png" alt="Category">
-                                    <span>Commerce</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/clock.png" alt="Job Type">
-                                    <span>Full time</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/money.png" alt="Salary">
-                                    <span>$40000-$42000</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/marker.png" alt="Location">
-                                    <span>New-York, USA</span>
-                                </div>
-                                &nbsp;&nbsp;&nbsp;
-                                <button type="submit">Details</button>
-                            </div>
-                        </div>
-                    </div>
-                 <!--ani roht--> 
-
-                </div>
-                <div class="related-job-item">
-                  
-                    <!--ani hna-->
-                    <div class="job-card">
-                        <div class="time">10 min ago</div>
-                        <div class="bookmark-icon">&#9734;</div>
-                        
-                        <div class="logo">
-                            <img src="https://img.icons8.com/color/48/000000/circled-s.png" alt="Company Logo" style="width: 50px; height: 50px; border-radius: 50%;">
-                        </div>
-                        &nbsp;&nbsp;
-                        <div class="job-details">
-                            <div class="job-title">Corporate Solutions Executive</div>
-                            <div class="company-name">Leffler and Sons</div>
-                            
-                            <div class="job-info">
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/briefcase.png" alt="Category">
-                                    <span>Commerce</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/clock.png" alt="Job Type">
-                                    <span>Full time</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/money.png" alt="Salary">
-                                    <span>$40000-$42000</span>
-                                </div>
-                                
-                                <div class="job-info-item">
-                                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/marker.png" alt="Location">
-                                    <span>New-York, USA</span>
-                                </div>
-                                &nbsp;&nbsp;&nbsp;
-                                <button type="submit">Details</button>
-                            </div>
-                        </div>
-                    </div>
-                     <!--ani roht-->
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="tags">
+            <span>Education</span>
+            <span>Commerce</span>
+            <span>Algeria</span>
+            <span>Corporate</span>
+            <span>Location</span>
+          </div>
+        </div> 
+        <!-- Job Overview Sidebar Section -->
         <aside class="job-sidebar">
-            <!-- Job Details Section -->
-            <div class="overview-card">
-                <h2>Service Overview</h2>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/id-card.png" alt="Job Title">
-                    <label>Service Title</label>
-                    <span>Video editing</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/clock.png" alt="Job Type">
-                    <label>Service Type</label>
-                    <span>Full Time</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/briefcase.png" alt="Category">
-                    <label>Category</label>
-                    <span>Commerce</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/experience.png" alt="Experience">
-                    <label>Experience</label>
-                    <span>5 Years</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/graduation-cap.png" alt="Degree">
-                    <label>Degree</label>
-                    <span>Master</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/money.png" alt="Offered Salary">
-                    <label>Pricing</label>
-                    <span>$40000-$42000</span>
-                </div>
-                
-                <div class="overview-item">
-                    <img src="https://img.icons8.com/ios-filled/50/4a4a4a/marker.png" alt="Location">
-                    <label>Location</label>
-                    <span>New-York, USA</span>
-                </div>
-            </div>
+          <div class="job-overview">
+            <h3>Job Overview</h3>
+            <p><i class="fas fa-briefcase"></i> <strong>Service provider:</strong>Name of user</p>
+            <p><i class="fas fa-building"></i> <strong>Service offered:</strong> Note taking</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> New York, USA</p>
+            <p><i class="fas fa-dollar-sign"></i> <strong>Prices:</strong> $40,000 - $42,000</p>
+            <p><i class="fas fa-clock"></i> <strong>Type:</strong> 24/7</p>
+           
+          </div>
 
-            <!-- Apply Form Section -->
-            <div class="apply-form">
-                <h4>Ask for a service</h4>
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <button type="submit">Submit Application</button>
-                </form>
-            </div>
+          <!-- Contact Form below Job Overview -->
+          <div class="contact-form">
+            <h3>Contact service provider</h3>
+            <form>
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" placeholder="Email Address" required>
+              <input type="tel" placeholder="Phone Number" required>
+              <textarea placeholder="Your Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
         </aside>
-    </main>
-    <footer>
-        <div class="footer-links">
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="aboutus.htm">About Us</a></li>
-                    <li><a href="work.htm">Work</a></li>
-                    <li><a href="aboutus.htm">FAQ</a></li> 
-                </ul>
-            </div>
-            <div>
-                <h4>Job Categories</h4>
-                <ul>
-                    <li><a href="work.htm">Technology</a></li>
-                    <li><a href="work.htm">Design</a></li>
-                    <li><a href="work.htm">Finance</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Newsletter</h4>
-                <p>Reach us out!</p>
-                <input type="email" placeholder="Your email">
-                <button>send email</button>
-            </div>
-        </div>
-        <p>&copy; 2024 Nbreecolik. All Rights Reserved.</p>
-    </footer>
-</div>
+      </section>
 
+      <!-- Related Jobs Section below Job Details -->
+      <section class="related-jobs">
+        <h2>Related services</h2>
+        <div class="job-card">
+          <span class="time-badge">24 min ago</span>
+          <h4>Internal Creative Coordinator</h4>
+          <p>Green Group</p>
+          <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
