@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cvform.css">
+    <title>cv form</title>
+</head>
+<body>
+    <body>
+
+        <div class="form-container">
+            <h2>CV CREATION</h2>
+            <form id="experienceForm" enctype="multipart/form-data">
+                <!-- Experience Input -->
+                <div class="input-group">
+                    <label for="experience">Years of Experience:</label>
+                    <div style="display: flex; align-items: center;">
+                        <input type="number" id="experience" name="experience" min="0" placeholder="Enter years" required />
+                        <button type="button" class="increment-btn" id="incrementExperience">+</button>
+                        <button type="button" class="increment-btn" id="decrementExperience">-</button>
+                    </div>
+                </div>
+    
+                <!-- PDF Upload -->
+                <div class="input-group">
+                    <label for="cvUpload">Upload CV (PDF):</label>
+                    <div class="file-upload-wrapper">
+                        <label class="file-upload-label" for="cvUpload">Choose File</label>
+                        <input type="file" id="cvUpload" name="cv" accept="application/pdf" required />
+                        <div class="file-name" id="fileName"></div>
+                    </div>
+                </div>
+    
+                <!-- Domain Select -->
+                <div class="input-group">
+                    <label for="domain">Select Domain:</label>
+                    <select id="domain" name="domain" required>
+                        <option value="">Select...</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Design">Design</option>
+                        <option value="Business Development">Business Development</option>
+                        <option value="Others">Other</option>
+                    </select>
+                </div>
+    
+                <!-- Other Domain Field -->
+                <div class="input-group" id="otherDomainContainer" style="display: none;">
+                    <label for="otherDomain">Please specify your domain:</label>
+                    <input type="text" id="otherDomain" name="otherDomain" placeholder="Enter your field" />
+                </div>
+    
+                <!-- Experience Description -->
+                <div class="input-group">
+                    <label for="description">Describe Your Experience:</label>
+                    <textarea id="description" name="description" placeholder="Describe your experience..." required></textarea>
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            // Increment and Decrement Experience years
+            document.getElementById('incrementExperience').addEventListener('click', function () {
+                let experienceField = document.getElementById('experience');
+                experienceField.value = parseInt(experienceField.value) + 1 || 1;
+            });
+    
+            document.getElementById('decrementExperience').addEventListener('click', function () {
+                let experienceField = document.getElementById('experience');
+                experienceField.value = Math.max(0, parseInt(experienceField.value) - 1 || 0);
+            });
+    
+            // Handle Domain "Others" option
+            document.getElementById('domain').addEventListener('change', function () {
+                const domainValue = this.value;
+                const otherDomainContainer = document.getElementById('otherDomainContainer');
+                if (domainValue === "Others") {
+                    otherDomainContainer.style.display = 'block'; // Show input for "Others"
+                } else {
+                    otherDomainContainer.style.display = 'none'; // Hide input for "Others"
+                }
+            });
+    
+            // Display file name after file selection
+            document.getElementById('cvUpload').addEventListener('change', function () {
+                const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+                document.getElementById('fileName').textContent = fileName;
+            });
+    
+            // Form Submission Handling (example)
+            document.getElementById('experienceForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Form submitted successfully!');
+            });
+        </script>
+    
+    </body>
+    </html>

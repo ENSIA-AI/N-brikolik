@@ -11,6 +11,7 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
     min-width: 100%;
+    width: 100%;
 }
 .toggle-btn {
     width: 300px;
@@ -39,7 +40,7 @@ body {
     background-color: white;
     color: black;
     position: absolute;
-    height: 90.5%;
+    height: 85.5%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transform: translateX(0); /* Show sidebar by default */
@@ -141,7 +142,7 @@ p-2 h3{
 .box {
     position: relative;
     margin-right:30px ;
-    height:250px;
+    height:280px;
     width: 23%;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -185,9 +186,9 @@ p-2 h3{
 
 .box button {
     
-    bottom: 10px;
+    bottom: 30px;
     left: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 10px ;
     font-size: 16px;
     background-color:#F0ECF3 ;
     color: black;
@@ -210,7 +211,7 @@ p-2 h3{
     width: 900px;
     margin-left: 85px;
     margin-top: 100px;
-    height: 300px;
+    height: 340px;
     border: 1px solid white;
     border-radius: 15px;
     background-color: #F0ECF3;
@@ -232,6 +233,7 @@ p-2 h3{
 .check-level {
     background-image: url('../pictures/Design sans titre (5).png');
     background-size: cover;
+   
     background-position: center;
     height: 80vh; /* Takes up the full height of the viewport */
     padding-left: 0;
@@ -360,7 +362,6 @@ button {
     cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-/* Media Queries */
 @media (max-width: 900px) {
     .footer-links {
         flex-direction: column; /* Stack items vertically on smaller screens */
@@ -457,8 +458,24 @@ button {
 }
 
 
+@media (max-width: 1020px){
+    .checkyourlevel p{
+        font-size:20px ;
+    }
 
+}
 @media (max-width: 1240px) {
+    body{
+    min-width:100%;
+
+    }
+    .check-level{
+        margin-top: 100px;
+    background-color: #309689;
+    background-image: none;
+    height: 500px;
+    width: 100%;
+    }
     .features {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -509,10 +526,24 @@ button {
 }
 
 /* Medium screens (up to 850px) */
-@media (max-width: 850px) {
+@media (max-width: 875px) {
+    body{
+        min-width:100%;
+        width: 100%;
+        }
+        .sidebar{
+            height: 78%;
+        }
     .content {
         margin-left: 260px;
         width:75%;
+    }
+    .check-level{
+        margin-top: 100px;
+       background-color: #309689;
+       background-image: none;
+       height: 500px;
+       width: 100%;
     }
 
     .salam3likom {
@@ -559,6 +590,14 @@ button {
 
 /* Small screens (up to 576px) */
 @media (max-width: 576px) {
+    .checkyourlevel p{
+        font-size:16px ;
+    }
+
+    body{
+        min-width:100%;
+        width: 100%;
+        }
     .container {
         padding: 10px;
     }
@@ -606,14 +645,15 @@ button {
         margin: 10px auto;
     }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /* Extra small screens (up to 400px) */
 @media (max-width: 400px) {
+    body{
+        min-width:100%;
+        width: 100%;
+    
+        }
     .view-more-link {
         font-size: 14px;
     }

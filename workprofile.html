@@ -3,46 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>n'Brecolik</title>
-    <link rel="stylesheet" href="/css/work.css"> 
+    <link rel="stylesheet" href="styleprowork.css">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <img class="logo" src="../pictures/84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="Company Logo" height="100rem">
-            
-              <button class="hamburger" onclick="toggleMenu()">☰</button>
-              <nav id="navMenu" class="nav-menu">
-                  <a href="home.html">Home</a>
-                  <a href="/html/work.html">work</a>
-                  <a href="/html/courses.htm">courses</a>
-                  <a href="/html/partners.htm">partners</a>
-                  <a href="/html/aboutus.htm">about us</a>
-              </nav>
-            
-            <div class="auth-buttons">
-                <a href="/html/login.html">
-                    <button class="login" aria-label="Login">Login</button>
-                </a>
-              <a href="/html/login.html">
-                <button class="sign" aria-label="Sign Up">Sign Up</button>
-            </a>
-            </div>
-        </nav>
-        
-
-                
-        
-        <h1 class="title">Work</h1>
-
-    </header>
-    
-    <section class="post">
-    <h2>Ready to post your jobb opportunities ?</h2>
-    <button >Get Started</button>
-    </section>
-    <button class="filter-toggle" id="filterToggle">Show Filter</button>
+    <button id="toggle-btn" class="toggle-btn">☰  </button>
+    <div class="sidebar" id="sidebar">
+        <ul id="menu-list">
+            <!-- Logo at the top of the sidebar -->
+            <li class="logo">
+                <img src="../pictures/84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="Logo" height="80px" width="80px">
+            </li>
+            <!-- Menu items -->
+            <li><a href="/html/Analytics">Analytics</a></li>
+            <li><a href="/html/serviceoffer.htm">Service offers</a></li>
+            <li><a href="/html/blog.html">blog</a></li>
+            <li><a href="#receprtion">reception</a></li>
+            <li><a href="/html/profile.html">profile</a></li>
+            <li><a href="/html/profilcour.hyml">my courses</a></li>
+        </ul>
+    </div>
             
     <div class="content">
         <div class="filter-container">
@@ -160,7 +140,9 @@
               <div class="l">
                 <img src="..\pictures\location.png" alt="location">Alger
               </div>
-           
+              <a href="/html/jobs.htm">
+              <button class="details">Job Details</button>
+            </a>
           </div> 
         
     </div>
@@ -190,9 +172,8 @@
               </div>
               
               <a href="/html/jobs.htm">
-
                 <button class="details">Job Details</button>
-                </a>
+              </a>
           </div> 
     </div>
     <div class="job">
@@ -221,56 +202,11 @@
               </div>
               
               <a href="/html/jobs.htm">
-
                 <button class="details">Job Details</button>
-                </a>
+              </a>
           </div> 
     </div>
-    <div class="start">
-        <h2>Ready to post your job services  ?</h2>
-        <button >Get Started</button>
-    </div>
-    <div class="he">
-        <h3>Job Services</h3>
-        <label for="sorting"></label>
-        <select id="sorting" name="sorting">
-            <option value="latest" selected>Select by Latest</option>
-            <option value="oldest">Select by Oldest</option>
-            <option value="popularity">Select by Popularity</option>
-            <option value="rating">Select by Rating</option>
-            <option value="price-low-to-high">Price: Low to High</option>
-            <option value="price-high-to-low">Price: High to Low</option>
-        </select>
-    </div>
-        <div class="job">
-            <div class="state">
-                <button>13 min ago</button>
-                <h3 >available</h3>
-            </div>
-            <div class="company">        
-                <img src="..\pictures\84b24fc57d403b8aae3ee625a2c2d82d-removebg-preview.png" alt="logo">
-                <h2>Regional Creative Facilitator</h2>
-            </div>
-    
-            <h4>Wisozk - Becker Co</h4>
-            <div class="info">
-                <div class="l">
-                  <img src="..\pictures\portfolio (1).png" alt="job">media
-                </div>
-                <div class="l">
-                  <img src="..\pictures\clock.png" alt="time">part time
-                </div>
-                  <div class="l">
-                    <img src="..\pictures\salary.png" alt="salary">2000$
-                  </div>
-                  <div class="l">
-                    <img src="..\pictures\location.png" alt="location">Alger
-</div>
-<a href="/html/jobs.htm">
 
-    <button class="details">Job Details</button>
-    </a>
-</div> 
 
             
         </div>
@@ -278,6 +214,10 @@
 </div>
 
 </div>
+
+    
+        
+    
 <footer>
     <div class="footer-links">
         <div>
@@ -306,45 +246,48 @@
     </div>
     <p>&copy; 2024 N'brecolik. All Rights Reserved.</p>
 </footer>
+
 <script>
-document.getElementById('filterToggle').addEventListener('click', function() {
-    var filter = document.querySelector('.filter');
-    var offerSection = document.querySelector('.offer');
-
-    // Toggle the visibility of the filter
-    if (filter.style.display === 'none' || filter.style.display === '') {
-        filter.style.display = 'block'; // Show filter bar
-
-        // Insert filter bar above job cards
-        offerSection.insertBefore(filter, offerSection.firstChild);
-
-        this.textContent = 'Hide Filter'; // Change button text
-    } else {
-        filter.style.display = 'none'; // Hide filter bar
-        this.textContent = 'Show Filter'; // Change button text
-    }
-});
-const sortingSelect = document.getElementById('sorting');
+    document.getElementById('filterToggle').addEventListener('click', function() {
+        var filter = document.querySelector('.filter');
+        var offerSection = document.querySelector('.offer');
+    
+        // Toggle the visibility of the filter
+        if (filter.style.display === 'none' || filter.style.display === '') {
+            filter.style.display = 'block'; // Show filter bar
+    
+            // Insert filter bar above job cards
+            offerSection.insertBefore(filter, offerSection.firstChild);
+    
+            this.textContent = 'Hide Filter'; // Change button text
+        } else {
+            filter.style.display = 'none'; // Hide filter bar
+            this.textContent = 'Show Filter'; // Change button text
+        }
+    });
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-btn');
+            const sidebar = document.querySelector('.sidebar');
+    
+            // Check if the toggle button and sidebar exist
+            if (toggleButton && sidebar) {
+                toggleButton.addEventListener('click', function () {
+                    sidebar.classList.toggle('hide');
+                });
+            }
+        });
+        const sortingSelect = document.getElementById('sorting');
 
 sortingSelect.addEventListener('change', function() {
     const selectedValue = sortingSelect.value;
     console.log("User selected: " + selectedValue);
 });
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    // Check if the menu is currently visible
-    if (navMenu.style.display === 'block') {
-        navMenu.style.display = 'none'; // Hide the menu
-    } else {
-        navMenu.style.display = 'block'; // Show the menu
-    }
-}
-
-</script>
-
-    
 
     
     
+    </script> 
+    
+
 </body>
 </html>
