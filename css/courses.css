@@ -98,13 +98,14 @@ body {
 
 /* Check Level Section with Updated Background */
 .check-level {
-    background-image: url('/Images/Design sans titre (5).png');
     background-size: cover;
     background-position: center;
-    height: 80vh; /* Takes up the full height of the viewport */
+    height: 70vh; /* Takes up the full height of the viewport */
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
+    background-color: #9BD7D1;
 }
 
 
