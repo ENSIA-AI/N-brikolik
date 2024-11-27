@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header Section with Background Image */
+.header {
+    background-image: url('/pictures/Free\ Vector\ _\ Paper\ style\ wavy\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40%;
+    color: rgb(5, 5, 5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-images {
+    display: flex;
+    padding-left: 5%;
+
+}
+
+.hero-images img {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 0%;
+}
+
+.start-learning {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
+     padding-right: 50px;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.start-learning h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Check Level Section with Updated Background */
+.check-level {
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Takes up the full height of the viewport */
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20%;
+    background-color: #9BD7D1;
+}
+
+
+.check-level-content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-level-content .text-content {
+    width: 60%;
+    position: absolute;
+    padding-top: 40%;
+    padding-left: 10%;
+}
+
+.check-level-content .image-content {
+    width: 30%;
+}
+
+.check-level-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.check-level .button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.partners {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.logos img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+footer {
+    background-color: #325D79;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footer-links div {
+    width: 30%;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.welcome {
+    padding-left: 5%;
+
+}
+
+.salam3likom {
+    padding: 5%;
+    padding-bottom: 0%;
+    padding-left: 9%;
+    padding-right: 8%;
+}
+
+.checkyourlevel {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.checkyourlevelbutton {
+    padding-top: 5%;
+}
+
+
+.schools {
+    margin: 20px 0;
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos img {
+    width: 150px;
+    margin: 0 20px;
+}
